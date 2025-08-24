@@ -355,7 +355,9 @@
             <h3 class="text-xl font-semibold mb-4">提供信息</h3>
             <div style="display: flex; justify-content: center">
               <div class="text-gray-600" style="text-align: left">
-                <p><strong>DHL:</strong> 转单号和邮编 美国100%能支付</p>
+                <p>
+                  <strong>DHL:</strong> 转单号和邮编 主营美国 加拿大(有数据权限)
+                </p>
                 <p><strong>UPS:</strong> 转单号即可</p>
                 <p><strong>Fedex:</strong> 提供转单号或账单支付</p>
               </div>
@@ -379,8 +381,154 @@
               3
             </div>
             <h3 class="text-xl font-semibold mb-4">支付费用</h3>
-            <p class="text-gray-600">
-              美金税费按当天实时汇率折算和手续费一起支付即可
+            <div class="text-gray-600">
+              <p class="mb-3 text-center">
+                美金税费按当天实时汇率折算和手续费一起支付即可
+              </p>
+
+              <!-- 简洁汇率查询 -->
+              <div class="flex justify-center">
+                <div
+                  class="bg-blue-50 border border-blue-200 rounded-lg p-2 px-4 flex items-center gap-3 w-fit"
+                >
+                  <span class="text-blue-800 font-medium text-sm"
+                    >实时汇率</span
+                  >
+                  <a
+                    href="https://currency-exchange.huodaiagent.com/"
+                    target="_blank"
+                    class="bg-blue-500 hover:bg-blue-600 text-white px-3 py-1.5 rounded text-sm font-medium transition-colors"
+                  >
+                    立即查询
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Verification Section -->
+    <section class="py-20 bg-gray-50">
+      <div class="container mx-auto px-4">
+        <div class="text-center mb-16">
+          <h2 class="text-4xl font-bold text-gray-800 mb-4">官网验证步骤</h2>
+          <p class="text-xl text-gray-600">实时查看税金支付状态，透明可靠</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-12 max-w-6xl mx-auto">
+          <!-- 步骤1：打开DHL官网 -->
+          <div class="bg-white p-8 rounded-2xl shadow-lg">
+            <div class="flex items-center mb-6">
+              <div
+                class="bg-blue-500 text-white w-12 h-12 rounded-full flex items-center justify-center text-xl font-bold mr-4"
+              >
+                1
+              </div>
+              <h3 class="text-2xl font-bold text-gray-800">打开DHL官网</h3>
+            </div>
+
+            <div class="space-y-4">
+              <div
+                class="bg-gradient-to-r from-blue-50 to-blue-100 p-4 rounded-lg border-l-4 border-blue-500"
+              >
+                <h4 class="font-semibold text-blue-800 mb-2">🌍 英文DHL官网</h4>
+                <a
+                  href="https://mydhl.express.dhl/gb/en/tracking.html#/track-by-number"
+                  target="_blank"
+                  class="text-blue-600 hover:text-blue-800 underline break-all text-sm"
+                >
+                  mydhl.express.dhl/gb/en/tracking.html
+                </a>
+              </div>
+
+              <div
+                class="bg-gradient-to-r from-green-50 to-green-100 p-4 rounded-lg border-l-4 border-green-500"
+              >
+                <h4 class="font-semibold text-green-800 mb-2">
+                  🇨🇳 中文DHL查询
+                </h4>
+                <a
+                  href="https://www.5idhl.com/#/queryService/wantSearch/expressSearch"
+                  target="_blank"
+                  class="text-green-600 hover:text-green-800 underline break-all text-sm"
+                >
+                  www.5idhl.com (推荐中文用户)
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- 步骤2：查看支付状态 -->
+          <div class="bg-white p-8 rounded-2xl shadow-lg">
+            <div class="flex items-center mb-6">
+              <div
+                class="bg-green-500 text-white w-12 h-12 rounded-full flex items-center justify-center text-xl font-bold mr-4"
+              >
+                2
+              </div>
+              <h3 class="text-2xl font-bold text-gray-800">输入转单号查询</h3>
+            </div>
+
+            <div class="space-y-4">
+              <!-- 等待支付状态 -->
+              <div class="bg-orange-50 p-4 rounded-lg border border-orange-200">
+                <h4 class="font-semibold text-orange-800 mb-3">
+                  ⏳ 等待支付状态
+                </h4>
+                <div class="space-y-2 text-sm">
+                  <div
+                    class="bg-white p-3 rounded border-l-3 border-orange-400"
+                  >
+                    <strong class="text-red-600">英文：</strong><br />
+                    "On hold awaiting for payment of shipment related fees"
+                  </div>
+                  <div
+                    class="bg-white p-3 rounded border-l-3 border-orange-400"
+                  >
+                    <strong class="text-red-600">中文：</strong><br />
+                    "等待付款中"
+                  </div>
+                </div>
+              </div>
+
+              <!-- 已支付状态 -->
+              <div class="bg-green-50 p-4 rounded-lg border border-green-200">
+                <h4 class="font-semibold text-green-800 mb-3">✅ 已支付状态</h4>
+                <div class="space-y-2 text-sm">
+                  <div class="bg-white p-3 rounded border-l-3 border-green-400">
+                    <strong class="text-green-600">英文：</strong><br />
+                    "Payment is received and recorded for shipment related fees"
+                  </div>
+                  <div class="bg-white p-3 rounded border-l-3 border-green-400">
+                    <strong class="text-green-600">中文：</strong><br />
+                    "快件已完成费用支付"
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 温馨提示 -->
+        <div class="mt-12 text-center">
+          <div
+            class="bg-blue-50 border border-blue-200 rounded-2xl p-6 max-w-4xl mx-auto"
+          >
+            <div class="flex items-center justify-center mb-4">
+              <div
+                class="w-12 h-12 bg-blue-500 rounded-full flex items-center justify-center text-white text-xl mr-3"
+              >
+                💡
+              </div>
+              <h4 class="text-xl font-bold text-blue-800">温馨提示</h4>
+            </div>
+            <p class="text-blue-700 text-lg leading-relaxed">
+              我们支付税金后，系统数据会自动同步，<strong class="text-blue-800"
+                >5分钟内</strong
+              >即可在官网查到更新的支付信息。
+              <br />建议您收藏以上查询网址，随时跟踪货物状态！
             </p>
           </div>
         </div>
