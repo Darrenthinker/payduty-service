@@ -210,7 +210,7 @@
           <!-- 导航 -->
           <nav class="hidden md:flex items-center space-x-6 text-sm font-medium">
             <a href="#services-overview" class="nav-link opacity-90">服务优势</a>
-            <a href="#country-guide" class="nav-link opacity-90">国家指南</a>
+            <a href="/guides/" class="nav-link opacity-90">关税指南</a>
             <a href="#process" class="nav-link opacity-90">服务流程</a>
             <a href="#faq" class="nav-link opacity-90">常见问题</a>
             <a href="#contact" class="nav-link opacity-90">联系我们</a>
@@ -282,6 +282,32 @@
             <div class="text-center">
               <div class="text-3xl font-bold text-yellow-300">99%</div>
               <div class="text-sm opacity-80">客户满意度</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 风险提示 -->
+    <section class="py-12 bg-white">
+      <div class="container mx-auto px-4">
+        <div class="max-w-5xl mx-auto rounded-2xl border border-red-200 bg-red-50 p-6 md:p-8 shadow-sm">
+          <div class="flex flex-col md:flex-row md:items-start gap-5">
+            <div class="shrink-0 inline-flex h-12 w-12 items-center justify-center rounded-full bg-red-600 text-white text-2xl font-bold">!</div>
+            <div>
+              <p class="text-sm font-bold text-red-600 mb-2">重要通知</p>
+              <h2 class="text-2xl md:text-3xl font-bold text-gray-900 mb-4">DDU 出货请提前确认关税承担方</h2>
+              <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-gray-700 leading-relaxed">
+                <div class="rounded-xl bg-white p-5 border border-red-100">
+                  <p class="font-semibold text-gray-900 mb-2">先派送后结算风险</p>
+                  <p class="text-sm">UPS、DHL、FedEx 清关放行后可能优先派件；若收件人未缴关税及杂费，相关费用可能自动转寄件人承担。无论货物签收、销毁或退回，关税及海关费用都可能追溯到寄件方。</p>
+                </div>
+                <div class="rounded-xl bg-white p-5 border border-red-100">
+                  <p class="font-semibold text-gray-900 mb-2">欧洲 FedEx 税金提醒</p>
+                  <p class="text-sm">近期 FedEx 欧洲关税反弹较多，发欧洲建议强制提供收件人邮箱，并提醒收件人跟进清关、及时缴税。产生关税账单后应及时处理，避免后续追偿周期拉长。</p>
+                </div>
+              </div>
+              <p class="mt-4 text-sm text-red-700 font-semibold">建议：出货前确认关税承担方、付款方式和收件人联系方式；DDU 货件务必确认收件人已完税。</p>
             </div>
           </div>
         </div>
@@ -1065,6 +1091,7 @@
             </p>
           </div>
           <div class="flex flex-wrap md:justify-end gap-x-4 gap-y-2 text-sm text-gray-500">
+            <a href="/guides/" class="hover:text-gray-950">关税指南</a>
             <span>DHL关税代付</span>
             <span>UPS税金代付</span>
             <span>FedEx关税代缴</span>

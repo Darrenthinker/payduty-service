@@ -1,0 +1,1067 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>关税知识库 | DHL/UPS/FedEx 各国税金单与进口税指南</title>
+    <meta
+      name="description"
+      content="按大洲和国家整理 DHL、UPS、FedEx 国际快递关税、VAT、GST、清关费用、代付判断和真实税金单样张，持续完善各国进口税知识库。"
+    />
+    <link rel="canonical" href="https://payduty.huodaiagent.com/guides/" />
+    <meta property="og:title" content="关税知识库 | 各国 DHL/UPS/FedEx 税金单说明" />
+    <meta property="og:description" content="按亚洲、欧洲、北美洲等分类，整理每个国家的税金规则、账单样张和代付判断方法。" />
+    <meta property="og:url" content="https://payduty.huodaiagent.com/guides/" />
+    <meta property="og:type" content="website" />
+    <link
+      rel="icon"
+      href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💰</text></svg>"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      body {
+        font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+        background: #f7f8fb;
+      }
+      html {
+        scroll-behavior: smooth;
+      }
+      .sidebar-link {
+        transition: background-color 0.2s, color 0.2s, transform 0.2s;
+      }
+      .sidebar-link:hover {
+        background: #f4f6fa;
+        color: #0f172a;
+        transform: translateX(2px);
+      }
+      .country-card {
+        transition: transform 0.2s, box-shadow 0.2s, border-color 0.2s;
+      }
+      .country-card:hover {
+        transform: translateY(-2px);
+        border-color: #cbd5e1;
+        box-shadow: 0 18px 50px rgba(15, 23, 42, 0.08);
+      }
+      .soft-grid {
+        background-image:
+          linear-gradient(rgba(15, 23, 42, 0.035) 1px, transparent 1px),
+          linear-gradient(90deg, rgba(15, 23, 42, 0.035) 1px, transparent 1px);
+        background-size: 28px 28px;
+      }
+      .image-zoom-trigger {
+        cursor: zoom-in;
+      }
+      .image-lightbox {
+        opacity: 0;
+        pointer-events: none;
+        transition: opacity 0.2s ease;
+      }
+      .image-lightbox.is-open {
+        opacity: 1;
+        pointer-events: auto;
+      }
+      .image-lightbox img {
+        max-height: calc(100vh - 7rem);
+      }
+    </style>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "CollectionPage",
+        "name": "关税知识库",
+        "description": "按国家和快递公司整理国际快递关税、VAT、GST、清关费用和真实税金单样张。",
+        "url": "https://payduty.huodaiagent.com/guides/",
+        "publisher": {
+          "@type": "Organization",
+          "name": "货代导航网"
+        },
+        "dateModified": "2026-05-31"
+      }
+    </script>
+  </head>
+  <body class="text-slate-950">
+    <header class="sticky top-0 z-50 bg-white/90 backdrop-blur border-b border-slate-200">
+      <div class="h-16 px-5 md:px-8 flex items-center justify-between gap-6">
+        <a href="/" class="flex items-center gap-3">
+          <span class="inline-flex w-10 h-10 items-center justify-center rounded-xl bg-amber-400 text-xl">💰</span>
+          <span>
+            <span class="block text-lg font-bold leading-tight">关税知识库</span>
+            <span class="block text-xs text-slate-500">DHL / UPS / FedEx 各国税金单</span>
+          </span>
+        </a>
+        <nav class="hidden lg:flex items-center gap-6 text-sm text-slate-600">
+          <a href="#continent-asia" class="hover:text-slate-950">亚洲</a>
+          <a href="#continent-europe" class="hover:text-slate-950">欧洲</a>
+          <a href="#continent-north-america" class="hover:text-slate-950">北美洲</a>
+          <a href="#bill-samples" class="hover:text-slate-950">税金单样张</a>
+          <a href="#official-sources" class="hover:text-slate-950">官方来源</a>
+        </nav>
+        <a href="/#contact" class="shrink-0 bg-slate-950 text-white px-5 py-2 rounded-full text-sm font-semibold hover:bg-slate-800">
+          发单号查询
+        </a>
+      </div>
+    </header>
+
+    <div class="grid grid-cols-1 lg:grid-cols-[320px_minmax(0,1fr)] min-h-[calc(100vh-4rem)]">
+      <aside class="hidden lg:block border-r border-slate-200 bg-white">
+        <div class="sticky top-16 h-[calc(100vh-4rem)] overflow-y-auto px-5 py-7">
+          <div class="rounded-3xl bg-slate-950 text-white p-6 mb-5">
+            <p class="text-xs font-semibold text-white/45 mb-3">Tax Guide</p>
+            <h2 class="text-2xl font-semibold tracking-normal mb-3">按国家查税金</h2>
+            <p class="text-sm text-white/60 leading-relaxed">每个国家单独沉淀规则、费用项目和真实税金单。后续补图时，直接放进对应国家档案。</p>
+          </div>
+
+          <nav class="space-y-4">
+            <div class="rounded-3xl border border-slate-200 p-4">
+              <div class="flex items-center gap-2 px-2 mb-3">
+                <span class="text-slate-400">⌄</span>
+                <p class="font-bold">国家税金</p>
+              </div>
+              <div class="space-y-1">
+                <a class="sidebar-link block rounded-2xl px-4 py-3 text-sm font-semibold text-slate-700" href="#continent-asia">亚洲</a>
+                <a class="sidebar-link block rounded-2xl px-4 py-3 text-sm text-slate-500" href="#country-vietnam">越南 Vietnam</a>
+                <a class="sidebar-link block rounded-2xl px-4 py-3 text-sm text-slate-500" href="#country-indonesia">印度尼西亚 Indonesia</a>
+                <a class="sidebar-link block rounded-2xl px-4 py-3 text-sm text-slate-500" href="#country-india">印度 India</a>
+                <a class="sidebar-link block rounded-2xl px-4 py-3 text-sm text-slate-500" href="#country-japan">日本 Japan</a>
+                <a class="sidebar-link block rounded-2xl px-4 py-3 text-sm text-slate-500" href="#country-singapore">新加坡 Singapore</a>
+                <a class="sidebar-link block rounded-2xl px-4 py-3 text-sm font-semibold text-slate-700" href="#continent-europe">欧洲</a>
+                <a class="sidebar-link block rounded-2xl px-4 py-3 text-sm text-slate-500" href="#country-uk">英国 United Kingdom</a>
+                <a class="sidebar-link block rounded-2xl px-4 py-3 text-sm text-slate-500" href="#country-eu">欧盟 European Union</a>
+                <a class="sidebar-link block rounded-2xl px-4 py-3 text-sm font-semibold text-slate-700" href="#continent-north-america">北美洲</a>
+                <a class="sidebar-link block rounded-2xl px-4 py-3 text-sm text-slate-500" href="#country-us">美国 United States</a>
+                <a class="sidebar-link block rounded-2xl px-4 py-3 text-sm text-slate-500" href="#country-canada">加拿大 Canada</a>
+                <a class="sidebar-link block rounded-2xl px-4 py-3 text-sm text-slate-500" href="#country-mexico">墨西哥 Mexico</a>
+                <a class="sidebar-link block rounded-2xl px-4 py-3 text-sm font-semibold text-slate-700" href="#continent-south-america">南美洲</a>
+                <a class="sidebar-link block rounded-2xl px-4 py-3 text-sm text-slate-500" href="#country-peru">秘鲁 Peru</a>
+                <a class="sidebar-link block rounded-2xl px-4 py-3 text-sm text-slate-500" href="#country-chile">智利 Chile</a>
+                <a class="sidebar-link block rounded-2xl px-4 py-3 text-sm font-semibold text-slate-700" href="#continent-africa">非洲</a>
+                <a class="sidebar-link block rounded-2xl px-4 py-3 text-sm text-slate-500" href="#country-egypt">埃及 Egypt</a>
+                <a class="sidebar-link block rounded-2xl px-4 py-3 text-sm text-slate-500" href="#country-zimbabwe">津巴布韦 Zimbabwe</a>
+                <a class="sidebar-link block rounded-2xl px-4 py-3 text-sm font-semibold text-slate-700" href="#continent-oceania">大洋洲</a>
+              </div>
+            </div>
+
+            <div class="rounded-3xl border border-slate-200 p-4">
+              <div class="flex items-center gap-2 px-2 mb-3">
+                <span class="text-slate-400">⌄</span>
+                <p class="font-bold">专业知识</p>
+              </div>
+              <a class="sidebar-link block rounded-2xl px-4 py-3 text-sm text-slate-500" href="#carrier-guide">DHL / UPS / FedEx 差异</a>
+              <a class="sidebar-link block rounded-2xl px-4 py-3 text-sm text-slate-500" href="#risk-notice">DDU 风险提醒</a>
+              <a class="sidebar-link block rounded-2xl px-4 py-3 text-sm text-slate-500" href="#status-guide">税金状态解释</a>
+              <a class="sidebar-link block rounded-2xl px-4 py-3 text-sm text-slate-500" href="#bill-samples">税金单样张</a>
+              <a class="sidebar-link block rounded-2xl px-4 py-3 text-sm text-slate-500" href="#official-sources">官方资料来源</a>
+            </div>
+          </nav>
+        </div>
+      </aside>
+
+      <main class="min-w-0">
+        <section class="soft-grid border-b border-slate-200 bg-white">
+          <div class="max-w-6xl px-5 md:px-10 py-14 md:py-20">
+            <p class="text-sm font-semibold text-blue-600 mb-5">Duty & Tax Knowledge Base</p>
+            <h1 class="text-5xl md:text-7xl font-semibold tracking-normal leading-tight max-w-4xl mb-7">
+              按大洲和国家整理关税单。
+            </h1>
+            <p class="text-xl text-slate-600 leading-relaxed max-w-3xl">
+              这里不是泛泛讲税率，而是把各国 DHL、UPS、FedEx 的进口税、VAT/GST、清关费、账单样式和代付判断方式逐步做成知识库。
+            </p>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mt-10 max-w-5xl">
+              <div class="rounded-3xl bg-slate-950 text-white p-6">
+                <p class="text-sm text-white/50 mb-3">当前已收录</p>
+                <p class="text-4xl font-semibold">13</p>
+                <p class="text-sm text-white/55 mt-2">个国家/地区档案</p>
+              </div>
+              <div class="rounded-3xl bg-white border border-slate-200 p-6">
+                <p class="text-sm text-slate-500 mb-3">真实样张</p>
+                <p class="text-4xl font-semibold">8</p>
+                <p class="text-sm text-slate-500 mt-2">越南 / 印尼 / 印度 / 加拿大 / 墨西哥 / 秘鲁 / 智利 / 津巴布韦样张</p>
+              </div>
+              <div class="rounded-3xl bg-white border border-slate-200 p-6">
+                <p class="text-sm text-slate-500 mb-3">后续方向</p>
+                <p class="text-4xl font-semibold">持续补充</p>
+                <p class="text-sm text-slate-500 mt-2">每张税金单对应一个国家档案</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="px-5 md:px-10 py-10 md:py-14">
+          <div class="max-w-6xl space-y-10">
+            <section id="continent-asia" class="scroll-mt-24">
+              <div class="flex flex-col md:flex-row md:items-end md:justify-between gap-4 mb-5">
+                <div>
+                  <p class="text-sm font-semibold text-blue-600 mb-2">Asia</p>
+                  <h2 class="text-4xl font-semibold tracking-normal">亚洲</h2>
+                </div>
+                <p class="text-slate-500 max-w-xl">亚洲国家差异很大，建议按“国家税制 + 快递账单项目 + 真实样张”逐个整理。</p>
+              </div>
+
+              <div class="grid grid-cols-1 xl:grid-cols-2 gap-5">
+                <article id="country-vietnam" class="country-card scroll-mt-24 rounded-[28px] border border-slate-200 bg-white p-6 md:p-7 xl:col-span-2">
+                  <div class="flex flex-col md:flex-row md:items-start md:justify-between gap-4 mb-6">
+                    <div>
+                      <p class="text-xs font-semibold text-slate-400 mb-3">VN · Vietnam</p>
+                      <h3 class="text-3xl font-semibold tracking-normal mb-3">越南：DHL 入境费用账单样式</h3>
+                      <p class="text-slate-600 leading-relaxed max-w-3xl">越南 DHL 账单更适合按“费用项目”理解，而不是只看一个税率。你提供的样张是 DHL-VNPT EXPRESS LTD 的 Inbound Charges Statement，目的地 SGN（胡志明市），总应付金额为 VND 1,948,266。</p>
+                    </div>
+                    <span class="shrink-0 bg-amber-50 text-amber-700 px-3 py-1 rounded-full text-sm font-semibold">已有税金单样张</span>
+                  </div>
+
+                  <div class="grid grid-cols-1 lg:grid-cols-5 gap-6">
+                    <div class="lg:col-span-3">
+                      <button
+                        type="button"
+                        class="image-zoom-trigger group relative block w-full text-left"
+                        data-lightbox-src="/guides/assets/vietnam-dhl-inbound-charges.jpg"
+                        data-lightbox-alt="DHL Vietnam inbound charges statement sample for Ho Chi Minh City"
+                      >
+                        <img
+                          src="/guides/assets/vietnam-dhl-inbound-charges.jpg"
+                          alt="DHL Vietnam inbound charges statement sample for Ho Chi Minh City"
+                          class="w-full rounded-3xl border border-slate-200 bg-white shadow-sm transition group-hover:brightness-95"
+                          loading="lazy"
+                        />
+                        <span class="absolute right-4 top-4 rounded-full bg-slate-950/80 px-4 py-2 text-xs font-semibold text-white backdrop-blur">
+                          点击放大
+                        </span>
+                      </button>
+                      <p class="text-xs text-slate-400 mt-3">示例：DHL Vietnam 入境费用账单，Destination: SGN，币种 VND。不同包裹费用会按商品、申报、清关和仓储情况变化。</p>
+                    </div>
+
+                    <div class="lg:col-span-2 space-y-4">
+                      <div class="rounded-3xl bg-slate-50 p-5">
+                        <p class="font-semibold mb-3">样张费用拆解</p>
+                        <dl class="space-y-3 text-sm">
+                          <div class="flex justify-between gap-4"><dt class="text-slate-500">Bonded Storage</dt><dd class="font-semibold">563,760</dd></div>
+                          <div class="flex justify-between gap-4"><dt class="text-slate-500">Import Export Duties</dt><dd class="font-semibold">391,980</dd></div>
+                          <div class="flex justify-between gap-4"><dt class="text-slate-500">Import Export Taxes</dt><dd class="font-semibold">658,526</dd></div>
+                          <div class="flex justify-between gap-4"><dt class="text-slate-500">Import Handling Fee</dt><dd class="font-semibold">324,000</dd></div>
+                          <div class="flex justify-between gap-4"><dt class="text-slate-500">Merchandise Process</dt><dd class="font-semibold">10,000</dd></div>
+                          <div class="flex justify-between gap-4 border-t border-slate-200 pt-3"><dt class="font-semibold">Total Amount</dt><dd class="font-semibold">VND 1,948,266</dd></div>
+                        </dl>
+                      </div>
+
+                      <div class="rounded-3xl bg-blue-50 p-5">
+                        <p class="font-semibold text-blue-950 mb-3">这张单怎么看</p>
+                        <ul class="space-y-2 text-sm text-blue-950/75 leading-relaxed">
+                          <li>Import Export Duties / Taxes 是海关相关税费项目，样张 VAT 栏为 0。</li>
+                          <li>Bonded Storage 和 Import Handling Fee 是 DHL/清关服务相关费用，样张中分别计入 8% VAT。</li>
+                          <li>VAT 合计 65,760，等于 522,000 与 300,000 两项服务费按 8% 计算。</li>
+                          <li>越南进口税通常按 CIF 价值、HS 编码、原产地和适用税率计算。</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </article>
+
+                <article id="country-indonesia" class="country-card scroll-mt-24 rounded-[28px] border border-slate-200 bg-white p-6 md:p-7 xl:col-span-2">
+                  <div class="flex flex-col md:flex-row md:items-start md:justify-between gap-4 mb-6">
+                    <div>
+                      <p class="text-xs font-semibold text-slate-400 mb-3">ID · Indonesia</p>
+                      <h3 class="text-3xl font-semibold tracking-normal mb-3">印度尼西亚：DHL 入境费用发票样式</h3>
+                      <p class="text-slate-600 leading-relaxed max-w-3xl">这张是 DHL Indonesia 的 Inbound Charges Invoice，目的地 JKT（Jakarta），发票日期 10/05/2026。它比单纯税率更有参考价值，因为账单把海关税费、DHL 垫付/服务费用和 VAT 分开列出来。</p>
+                    </div>
+                    <span class="shrink-0 bg-amber-50 text-amber-700 px-3 py-1 rounded-full text-sm font-semibold">已有税金单样张</span>
+                  </div>
+
+                  <div class="grid grid-cols-1 lg:grid-cols-5 gap-6">
+                    <div class="lg:col-span-3">
+                      <button
+                        type="button"
+                        class="image-zoom-trigger group relative block w-full text-left"
+                        data-lightbox-src="/guides/assets/indonesia-dhl-inbound-charges.jpg"
+                        data-lightbox-alt="DHL Indonesia inbound charges invoice sample for Jakarta"
+                      >
+                        <img
+                          src="/guides/assets/indonesia-dhl-inbound-charges.jpg"
+                          alt="DHL Indonesia inbound charges invoice sample for Jakarta"
+                          class="w-full rounded-3xl border border-slate-200 bg-white shadow-sm transition group-hover:brightness-95"
+                          loading="lazy"
+                        />
+                        <span class="absolute right-4 top-4 rounded-full bg-slate-950/80 px-4 py-2 text-xs font-semibold text-white backdrop-blur">
+                          点击放大
+                        </span>
+                      </button>
+                      <p class="text-xs text-slate-400 mt-3">示例：DHL Indonesia 入境费用发票，Destination: JKT，币种 IDR。不同商品、申报价值、HS 编码和清关方式会影响实际费用。</p>
+                    </div>
+
+                    <div class="lg:col-span-2 space-y-4">
+                      <div class="rounded-3xl bg-slate-50 p-5">
+                        <p class="font-semibold mb-3">样张费用拆解</p>
+                        <dl class="space-y-3 text-sm">
+                          <div class="flex justify-between gap-4"><dt class="text-slate-500">Import Export Duties</dt><dd class="font-semibold">IDR 139,101</dd></div>
+                          <div class="flex justify-between gap-4"><dt class="text-slate-500">Advance Payment</dt><dd class="font-semibold">IDR 160,000</dd></div>
+                          <div class="flex justify-between gap-4"><dt class="text-slate-500">VAT on Advance Payment</dt><dd class="font-semibold">IDR 17,600</dd></div>
+                          <div class="flex justify-between gap-4 border-t border-slate-200 pt-3"><dt class="font-semibold">Total Amount</dt><dd class="font-semibold">IDR 316,701</dd></div>
+                        </dl>
+                      </div>
+
+                      <div class="rounded-3xl bg-blue-50 p-5">
+                        <p class="font-semibold text-blue-950 mb-3">这张单怎么看</p>
+                        <ul class="space-y-2 text-sm text-blue-950/75 leading-relaxed">
+                          <li>Import Export Duties 是海关相关税费，样张中该项 VAT 栏为 0。</li>
+                          <li>Advance Payment 是 DHL 代垫/清关处理相关费用，样张显示金额 160,000。</li>
+                          <li>VAT 只出现在 Advance Payment 这一行，金额 17,600；总额正好是 139,101 + 160,000 + 17,600。</li>
+                          <li>判断能否代付时，优先看 HWB Number、Invoice Number、Total Amount 和账单币种。</li>
+                        </ul>
+                      </div>
+
+                      <div class="rounded-3xl bg-amber-50 p-5">
+                        <p class="font-semibold text-amber-950 mb-3">印尼清关资料要求</p>
+                        <ul class="space-y-2 text-sm text-amber-950/75 leading-relaxed">
+                          <li>公司收件或企业进口：通常需要提供 NPWP（印尼税号）。</li>
+                          <li>当地个人收件：提供 NIK（Nomor Induk Kependudukan，印尼居民身份证号码），一般为 16 位纯数字。</li>
+                          <li>如无法提供 NIK，可按当地要求补充印尼驾照等身份证明资料。</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </article>
+
+                <article id="country-india" class="country-card scroll-mt-24 rounded-[28px] border border-slate-200 bg-white p-6 md:p-7 xl:col-span-2">
+                  <div class="flex flex-col md:flex-row md:items-start md:justify-between gap-4 mb-6">
+                    <div>
+                      <p class="text-xs font-semibold text-slate-400 mb-3">IN · India</p>
+                      <h3 class="text-3xl font-semibold tracking-normal mb-3">印度：FedEx Import Duty、清关服务费与 GST</h3>
+                      <p class="text-slate-600 leading-relaxed max-w-3xl">这组截图来自 FedEx 印度包裹的 Payments 页面。它把应付金额拆成 Import Duty、Other Charges 和 Tax (GST)，适合说明印度 FedEx 税金页面里“税金”和“额外清关服务费”是分开显示的。</p>
+                    </div>
+                    <span class="shrink-0 bg-amber-50 text-amber-700 px-3 py-1 rounded-full text-sm font-semibold">FedEx 税金样张</span>
+                  </div>
+
+                  <div class="grid grid-cols-1 lg:grid-cols-5 gap-6">
+                    <div class="lg:col-span-3">
+                      <div class="grid grid-cols-1 gap-4">
+                        <button
+                          type="button"
+                          class="image-zoom-trigger group relative block w-full text-left"
+                          data-lightbox-src="/guides/assets/india-fedex-payments-import-duty.jpg"
+                          data-lightbox-alt="FedEx India payments import duty sample"
+                        >
+                          <img
+                            src="/guides/assets/india-fedex-payments-import-duty.jpg"
+                            alt="FedEx India payments import duty sample"
+                            class="w-full rounded-3xl border border-slate-200 bg-white shadow-sm transition group-hover:brightness-95"
+                            loading="lazy"
+                          />
+                          <span class="absolute right-4 top-4 rounded-full bg-slate-950/80 px-4 py-2 text-xs font-semibold text-white backdrop-blur">Import Duty · 点击放大</span>
+                        </button>
+
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                          <button type="button" class="image-zoom-trigger group relative block w-full text-left" data-lightbox-src="/guides/assets/india-fedex-payments-other-charges.jpg" data-lightbox-alt="FedEx India payments other charges sample">
+                            <img src="/guides/assets/india-fedex-payments-other-charges.jpg" alt="FedEx India payments other charges sample" class="h-64 w-full rounded-3xl border border-slate-200 bg-white object-cover object-top shadow-sm transition group-hover:brightness-95" loading="lazy" />
+                            <span class="absolute right-3 top-3 rounded-full bg-slate-950/80 px-3 py-1.5 text-xs font-semibold text-white">Other Charges</span>
+                          </button>
+                          <button type="button" class="image-zoom-trigger group relative block w-full text-left" data-lightbox-src="/guides/assets/india-fedex-payments-gst.jpg" data-lightbox-alt="FedEx India payments GST sample">
+                            <img src="/guides/assets/india-fedex-payments-gst.jpg" alt="FedEx India payments GST sample" class="h-64 w-full rounded-3xl border border-slate-200 bg-white object-cover object-top shadow-sm transition group-hover:brightness-95" loading="lazy" />
+                            <span class="absolute right-3 top-3 rounded-full bg-slate-950/80 px-3 py-1.5 text-xs font-semibold text-white">Tax GST</span>
+                          </button>
+                        </div>
+                      </div>
+                      <p class="text-xs text-slate-400 mt-3">示例：FedEx India Payments 页面，币种 INR。三张图分别展开 Import Duty、Other Charges、Tax (GST) 的说明。</p>
+                    </div>
+
+                    <div class="lg:col-span-2 space-y-4">
+                      <div class="rounded-3xl bg-slate-50 p-5">
+                        <p class="font-semibold mb-3">样张费用拆解</p>
+                        <dl class="space-y-3 text-sm">
+                          <div class="flex justify-between gap-4"><dt class="text-slate-500">Import Duty</dt><dd class="font-semibold">INR 16,941</dd></div>
+                          <div class="flex justify-between gap-4"><dt class="text-slate-500">Other Charges</dt><dd class="font-semibold">INR 800</dd></div>
+                          <div class="flex justify-between gap-4"><dt class="text-slate-500">Tax (GST)</dt><dd class="font-semibold">INR 144</dd></div>
+                          <div class="flex justify-between gap-4 border-t border-slate-200 pt-3"><dt class="font-semibold">Total</dt><dd class="font-semibold">INR 17,885</dd></div>
+                        </dl>
+                      </div>
+
+                      <div class="rounded-3xl bg-blue-50 p-5">
+                        <p class="font-semibold text-blue-950 mb-3">这组图怎么看</p>
+                        <ul class="space-y-2 text-sm text-blue-950/75 leading-relaxed">
+                          <li>Import Duty 是进口进入印度时由海关征收的税费，截图说明 FedEx 已代表客户先支付给相关机构。</li>
+                          <li>Other Charges 是额外清关支持费用，通常和 FedEx 清关团队为放行包裹所做的额外处理有关。</li>
+                          <li>Tax (GST) 是印度 GST 项目，截图说明 FedEx 已先代付 GST。</li>
+                          <li>总额 INR 17,885 = Import Duty 16,941 + Other Charges 800 + GST 144。</li>
+                        </ul>
+                      </div>
+
+                      <div class="rounded-3xl bg-slate-950 p-5 text-white">
+                        <p class="font-semibold mb-3">代付确认重点</p>
+                        <p class="text-sm leading-relaxed text-white/70">印度 FedEx 这类页面建议优先核对运单号、Payments 页 Total、币种 INR，以及是否还有 TDS 或其他展开项。客户发来截图时，最好同时要完整运单号，方便确认可操作性。</p>
+                      </div>
+                    </div>
+                  </div>
+                </article>
+
+                <article id="country-japan" class="country-card scroll-mt-24 rounded-[28px] border border-dashed border-slate-300 bg-white p-6">
+                  <p class="text-xs font-semibold text-slate-400 mb-3">JP · Japan</p>
+                  <h3 class="text-2xl font-semibold mb-3">日本：待补税金单</h3>
+                  <p class="text-slate-600 leading-relaxed">后续可补 DHL/UPS/FedEx 到日本的消费税、关税、垫付费样张。建议记录币种、税金项目、是否有 handling fee。</p>
+                </article>
+
+                <article id="country-singapore" class="country-card scroll-mt-24 rounded-[28px] border border-dashed border-slate-300 bg-white p-6">
+                  <p class="text-xs font-semibold text-slate-400 mb-3">SG · Singapore</p>
+                  <h3 class="text-2xl font-semibold mb-3">新加坡：待补税金单</h3>
+                  <p class="text-slate-600 leading-relaxed">后续可补 GST、进口申报和快递代垫费用样张，适合作为东南亚税金单对比案例。</p>
+                </article>
+              </div>
+            </section>
+
+            <section id="continent-europe" class="scroll-mt-24">
+              <div class="flex flex-col md:flex-row md:items-end md:justify-between gap-4 mb-5">
+                <div>
+                  <p class="text-sm font-semibold text-blue-600 mb-2">Europe</p>
+                  <h2 class="text-4xl font-semibold tracking-normal">欧洲</h2>
+                </div>
+                <p class="text-slate-500 max-w-xl">欧洲重点是 VAT、关税门槛变化、IOSS 以及快递清关/垫付费用。</p>
+              </div>
+
+              <div class="grid grid-cols-1 xl:grid-cols-2 gap-5">
+                <article id="country-uk" class="country-card scroll-mt-24 rounded-[28px] border border-slate-200 bg-white p-6 md:p-7">
+                  <p class="text-xs font-semibold text-slate-400 mb-3">UK · United Kingdom</p>
+                  <h3 class="text-2xl font-semibold mb-3">英国：£135 不是“是否缴 VAT”的分界线</h3>
+                  <p class="text-slate-600 leading-relaxed">按英国最新官方口径，进口商品通常都要考虑 VAT；£135 主要影响 VAT 由谁收、在哪里收，以及是否进入更完整的进口清关税费流程。超过 £135 的货物，收件人更可能在进口环节收到 VAT、Customs Duty 和快递处理费通知。</p>
+                  <p class="text-sm text-slate-500 mt-4">后续可补：DHL UK、UPS UK、FedEx UK 的税金通知截图。</p>
+                </article>
+
+                <article id="country-eu" class="country-card scroll-mt-24 rounded-[28px] border border-slate-200 bg-white p-6 md:p-7">
+                  <p class="text-xs font-semibold text-slate-400 mb-3">EU · European Union</p>
+                  <h3 class="text-2xl font-semibold mb-3">欧盟：€150 免关税规则正在改变</h3>
+                  <p class="text-slate-600 leading-relaxed">欧盟原本对价值不超过 €150 的小包裹免征 customs duties，但 VAT 仍通常需要处理。根据欧盟 2026 年通过的新规则，欧盟将取消 €150 以下包裹的关税豁免，并在 2026 年 7 月 1 日起先引入临时性统一处理机制。</p>
+                  <p class="text-sm text-slate-500 mt-4">后续可按德国、法国、荷兰、西班牙分别补税金单。</p>
+                </article>
+              </div>
+            </section>
+
+            <section id="continent-north-america" class="scroll-mt-24">
+              <div class="flex flex-col md:flex-row md:items-end md:justify-between gap-4 mb-5">
+                <div>
+                  <p class="text-sm font-semibold text-blue-600 mb-2">North America</p>
+                  <h2 class="text-4xl font-semibold tracking-normal">北美洲</h2>
+                </div>
+                <p class="text-slate-500 max-w-xl">北美是当前最核心的代付场景，适合优先补充美国、加拿大、墨西哥的 DHL / UPS / FedEx 税金单。</p>
+              </div>
+
+              <div class="grid grid-cols-1 xl:grid-cols-2 gap-5">
+                <article id="country-us" class="country-card scroll-mt-24 rounded-[28px] border border-slate-200 bg-white p-6 md:p-7">
+                  <div class="flex items-start justify-between gap-4 mb-3">
+                    <p class="text-xs font-semibold text-slate-400">US · United States</p>
+                    <span class="bg-blue-50 text-blue-700 px-3 py-1 rounded-full text-sm font-semibold">核心业务</span>
+                  </div>
+                  <h3 class="text-2xl font-semibold mb-3">美国：de minimis 变化和 Section 301</h3>
+                  <p class="text-slate-600 leading-relaxed">美国低价值包裹政策变化后，很多原本不需要缴税的包裹会出现 duty / fees 待支付状态。来自中国的商品还可能叠加 Section 301 相关关税。</p>
+                  <ul class="mt-5 grid grid-cols-1 gap-3 text-sm text-slate-600">
+                    <li class="rounded-2xl bg-slate-50 p-4">DHL：通常用转单号即可先查状态。</li>
+                    <li class="rounded-2xl bg-slate-50 p-4">UPS：常见 import fees 或 brokerage 相关提示。</li>
+                    <li class="rounded-2xl bg-slate-50 p-4">FedEx：可能通过 Import Tool 或账单方式支付。</li>
+                  </ul>
+                </article>
+
+                <article id="country-canada" class="country-card scroll-mt-24 rounded-[28px] border border-slate-200 bg-white p-6 md:p-7 xl:col-span-2">
+                  <div class="flex flex-col md:flex-row md:items-start md:justify-between gap-4 mb-6">
+                    <div>
+                      <p class="text-xs font-semibold text-slate-400 mb-3">CA · Canada</p>
+                      <h3 class="text-3xl font-semibold tracking-normal mb-3">加拿大：UPS 税金与清关经纪费组成</h3>
+                      <p class="text-slate-600 leading-relaxed max-w-3xl">这张加拿大 UPS 明细把费用拆成 Government Charges、HST/GST/PST、UPS Customs Brokerage Charges 等项目。它很适合说明加拿大包裹的实际应付金额，往往不只是“税”，还会包含 UPS 的清关经纪服务费。</p>
+                    </div>
+                    <span class="shrink-0 bg-amber-50 text-amber-700 px-3 py-1 rounded-full text-sm font-semibold">费用明细样张</span>
+                  </div>
+
+                  <div class="grid grid-cols-1 lg:grid-cols-5 gap-6">
+                    <div class="lg:col-span-3">
+                      <button
+                        type="button"
+                        class="image-zoom-trigger group relative block w-full text-left"
+                        data-lightbox-src="/guides/assets/canada-ups-import-charges.jpg"
+                        data-lightbox-alt="UPS Canada import charges detail sample"
+                      >
+                        <img
+                          src="/guides/assets/canada-ups-import-charges.jpg"
+                          alt="UPS Canada import charges detail sample"
+                          class="w-full rounded-3xl border border-slate-200 bg-white shadow-sm transition group-hover:brightness-95"
+                          loading="lazy"
+                        />
+                        <span class="absolute right-4 top-4 rounded-full bg-slate-950/80 px-4 py-2 text-xs font-semibold text-white backdrop-blur">
+                          点击放大
+                        </span>
+                      </button>
+                      <p class="text-xs text-slate-400 mt-3">示例：UPS Canada 进口费用明细，币种 CAD，Import Date: 05/26/2026。不同省份、申报价值和清关方式会影响最终金额。</p>
+                    </div>
+
+                    <div class="lg:col-span-2 space-y-4">
+                      <div class="rounded-3xl bg-slate-50 p-5">
+                        <p class="font-semibold mb-3">样张费用拆解</p>
+                        <dl class="space-y-3 text-sm">
+                          <div class="flex justify-between gap-4"><dt class="text-slate-500">Government Charges</dt><dd class="font-semibold">CA$7.15</dd></div>
+                          <div class="flex justify-between gap-4"><dt class="text-slate-500">HST or GST + PST</dt><dd class="font-semibold">CA$7.15</dd></div>
+                          <div class="flex justify-between gap-4"><dt class="text-slate-500">UPS Customs Brokerage Charges</dt><dd class="font-semibold">CA$13.16</dd></div>
+                          <div class="flex justify-between gap-4"><dt class="text-slate-500">Brokerage Fee</dt><dd class="font-semibold">CA$11.65</dd></div>
+                          <div class="flex justify-between gap-4"><dt class="text-slate-500">Brokerage GST/HST</dt><dd class="font-semibold">CA$1.51</dd></div>
+                          <div class="flex justify-between gap-4 border-t border-slate-200 pt-3"><dt class="font-semibold">Total Due</dt><dd class="font-semibold">CA$20.31</dd></div>
+                        </dl>
+                      </div>
+
+                      <div class="rounded-3xl bg-blue-50 p-5">
+                        <p class="font-semibold text-blue-950 mb-3">这张单怎么看</p>
+                        <ul class="space-y-2 text-sm text-blue-950/75 leading-relaxed">
+                          <li>Government Charges 是政府税费部分，样张里对应 HST or GST + PST。</li>
+                          <li>UPS Customs Brokerage Charges 是 UPS 清关经纪相关费用，由 Brokerage Fee 和其 GST/HST 组成。</li>
+                          <li>总额 CA$20.31 = CA$7.15 政府税费 + CA$13.16 UPS 经纪费用。</li>
+                          <li>代付确认时，重点核对 Tracking Number、Invoice Number 和 Total Due。</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </article>
+
+                <article id="country-mexico" class="country-card scroll-mt-24 rounded-[28px] border border-slate-200 bg-white p-6 md:p-7 xl:col-span-2">
+                  <div class="flex flex-col md:flex-row md:items-start md:justify-between gap-4 mb-6">
+                    <div>
+                      <p class="text-xs font-semibold text-slate-400 mb-3">MX · Mexico</p>
+                      <h3 class="text-3xl font-semibold tracking-normal mb-3">墨西哥：UPS 进口费用支付明细</h3>
+                      <p class="text-slate-600 leading-relaxed max-w-3xl">根据你提供的 UPS 支付完成页面，墨西哥费用会把政府税费和 UPS 清关/代理费用分开显示。样张总支付金额为 MXN 945.60，适合放在北美洲档案里作为墨西哥 UPS 账单样式。</p>
+                    </div>
+                    <span class="shrink-0 bg-amber-50 text-amber-700 px-3 py-1 rounded-full text-sm font-semibold">费用明细样张</span>
+                  </div>
+
+                  <div class="grid grid-cols-1 lg:grid-cols-5 gap-6">
+                    <div class="lg:col-span-3">
+                      <button
+                        type="button"
+                        class="image-zoom-trigger group relative block w-full text-left"
+                        data-lightbox-src="/guides/assets/mexico-ups-import-charges.svg"
+                        data-lightbox-alt="UPS Mexico import charges payment detail sample"
+                      >
+                        <img
+                          src="/guides/assets/mexico-ups-import-charges.svg"
+                          alt="UPS Mexico import charges payment detail sample"
+                          class="w-full rounded-3xl border border-slate-200 bg-white shadow-sm transition group-hover:brightness-95"
+                          loading="lazy"
+                        />
+                        <span class="absolute right-4 top-4 rounded-full bg-slate-950/80 px-4 py-2 text-xs font-semibold text-white backdrop-blur">
+                          点击放大
+                        </span>
+                      </button>
+                      <p class="text-xs text-slate-400 mt-3">示例：UPS Mexico 进口费用支付完成页。该图按你提供的截图复刻，用于展示墨西哥费用明细样式。</p>
+                    </div>
+
+                    <div class="lg:col-span-2 space-y-4">
+                      <div class="rounded-3xl bg-blue-50 p-5">
+                        <p class="font-semibold text-blue-950 mb-3">这张墨西哥单怎么看</p>
+                        <ul class="space-y-2 text-sm text-blue-950/75 leading-relaxed">
+                          <li>Government Charges 是政府相关进口税费，样张金额为 MX$566.00。</li>
+                          <li>UPS Brokerage and Partner Government Agency Fees 是 UPS 清关经纪及政府机构相关服务费，样张金额为 MX$327.24。</li>
+                          <li>总额 MX$945.60 比两项相加多 MX$52.36，刚好约等于 MX$327.24 × 16%。</li>
+                          <li>因此这张样张可以理解为：政府税费 + UPS 清关/代理费用 + 清关服务费对应的 16% IVA。</li>
+                        </ul>
+                      </div>
+
+                      <div class="rounded-3xl bg-slate-50 p-5">
+                        <p class="font-semibold mb-3">墨西哥实务提醒</p>
+                        <p class="text-sm text-slate-600 leading-relaxed">墨西哥进口常见税费包括进口税、IVA、DTA 或快递清关相关服务费。UPS/FedEx/DHL 页面上的“Government Charges”和“Brokerage Fees”要分开看，不要只看 Total Paid。</p>
+                      </div>
+                    </div>
+                  </div>
+                </article>
+              </div>
+            </section>
+
+            <section id="continent-south-america" class="scroll-mt-24">
+              <div class="flex flex-col md:flex-row md:items-end md:justify-between gap-4 mb-5">
+                <div>
+                  <p class="text-sm font-semibold text-blue-600 mb-2">South America</p>
+                  <h2 class="text-4xl font-semibold tracking-normal">南美洲</h2>
+                </div>
+                <p class="text-slate-500 max-w-xl">南美洲建议重点记录海关税费、VAT/IGV 类税费、快递代垫账单和正式申报文件之间的对应关系。</p>
+              </div>
+
+              <article id="country-peru" class="country-card scroll-mt-24 rounded-[28px] border border-slate-200 bg-white p-6 md:p-7">
+                <div class="flex flex-col md:flex-row md:items-start md:justify-between gap-4 mb-6">
+                  <div>
+                    <p class="text-xs font-semibold text-slate-400 mb-3">PE · Peru</p>
+                    <h3 class="text-3xl font-semibold tracking-normal mb-3">秘鲁：DHL 税金单、海关税费与简化申报单</h3>
+                    <p class="text-slate-600 leading-relaxed max-w-3xl">这组资料比普通付款截图更完整：既有 DHL EXPRESS PERU SAC 的 Nota de Contabilidad，也有 Aduanas 的 Declaración Simplificada 和税费清算页。它可以用来说明秘鲁包裹从申报、海关计税到 DHL 代垫/向客户收回费用的完整链路。</p>
+                  </div>
+                  <span class="shrink-0 bg-amber-50 text-amber-700 px-3 py-1 rounded-full text-sm font-semibold">税金单 + 申报单</span>
+                </div>
+
+                <div class="grid grid-cols-1 lg:grid-cols-5 gap-6">
+                  <div class="lg:col-span-3">
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                      <button
+                        type="button"
+                        class="image-zoom-trigger group relative block w-full text-left sm:col-span-2"
+                        data-lightbox-src="/guides/assets/peru-dhl-tax-bill.jpg"
+                        data-lightbox-alt="DHL Peru nota de contabilidad tax reimbursement sample"
+                      >
+                        <img
+                          src="/guides/assets/peru-dhl-tax-bill.jpg"
+                          alt="DHL Peru nota de contabilidad tax reimbursement sample"
+                          class="w-full rounded-3xl border border-slate-200 bg-white shadow-sm transition group-hover:brightness-95"
+                          loading="lazy"
+                        />
+                        <span class="absolute right-4 top-4 rounded-full bg-slate-950/80 px-4 py-2 text-xs font-semibold text-white backdrop-blur">
+                          税金单 · 点击放大
+                        </span>
+                      </button>
+
+                    </div>
+                  </div>
+
+                  <div class="lg:col-span-2 space-y-4">
+                    <div class="rounded-3xl bg-slate-50 p-5">
+                      <p class="font-semibold mb-3">关键字段</p>
+                      <dl class="space-y-3 text-sm">
+                        <div class="flex justify-between gap-4"><dt class="text-slate-500">Guía / AWB</dt><dd class="font-semibold">4687092480</dd></div>
+                        <div class="flex justify-between gap-4"><dt class="text-slate-500">Declaración</dt><dd class="font-semibold">12416677</dd></div>
+                        <div class="flex justify-between gap-4"><dt class="text-slate-500">Manifiesto</dt><dd class="font-semibold">024928</dd></div>
+                        <div class="flex justify-between gap-4"><dt class="text-slate-500">Valor FOB</dt><dd class="font-semibold">USD 1,307.40</dd></div>
+                        <div class="flex justify-between gap-4"><dt class="text-slate-500">Valor CIF</dt><dd class="font-semibold">USD 2,000.00</dd></div>
+                        <div class="flex justify-between gap-4"><dt class="text-slate-500">Peso</dt><dd class="font-semibold">9.900 kg</dd></div>
+                      </dl>
+                    </div>
+
+                    <div class="rounded-3xl bg-slate-950 p-5 text-white">
+                      <p class="font-semibold mb-3">样张费用拆解</p>
+                      <dl class="space-y-3 text-sm">
+                        <div class="flex justify-between gap-4"><dt class="text-white/55">AD/VALOREM</dt><dd class="font-semibold">US$ 80.000</dd></div>
+                        <div class="flex justify-between gap-4"><dt class="text-white/55">IMPT.GRAL.VTAS</dt><dd class="font-semibold">US$ 322.000</dd></div>
+                        <div class="flex justify-between gap-4"><dt class="text-white/55">IMP.PROM.MUNIC</dt><dd class="font-semibold">US$ 52.000</dd></div>
+                        <div class="flex justify-between gap-4 border-t border-white/15 pt-3"><dt class="font-semibold">Total Derechos</dt><dd class="font-semibold">US$ 454.000</dd></div>
+                        <div class="flex justify-between gap-4"><dt class="font-semibold">Reintegro Aduanas</dt><dd class="font-semibold">S/ 1,561.00</dd></div>
+                      </dl>
+                    </div>
+
+                    <div class="rounded-3xl bg-blue-50 p-5">
+                      <p class="font-semibold text-blue-950 mb-3">这组单怎么看</p>
+                      <ul class="space-y-2 text-sm text-blue-950/75 leading-relaxed">
+                        <li>Declaración Simplificada 是海关申报资料，里面能看到 FOB、Flete、Seguro、CIF 和每个商品序列。</li>
+                        <li>税费清算页显示计税结果：CIF US$ 2,000，对应 Total Derechos US$ 454。</li>
+                        <li>DHL 的 Nota de Contabilidad 显示 Reintegro Aduanas S/ 1,561.00，是向客户收回海关相关款项的账单。</li>
+                        <li>这类资料适合用 AWB、Declaración、Manifiesto 三个编号交叉核对，避免只看单张截图。</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="mt-6 rounded-[28px] border border-red-100 bg-red-50/40 p-5 md:p-6">
+                  <div class="flex flex-col md:flex-row md:items-end md:justify-between gap-3 border-b border-red-200 pb-4 mb-5">
+                    <div>
+                      <p class="text-xs font-semibold text-red-500 mb-2">Conceptos</p>
+                      <h4 class="text-2xl font-semibold tracking-normal">秘鲁 DHL 费用概念对照</h4>
+                    </div>
+                    <span class="self-start md:self-auto rounded-full bg-white px-3 py-1 text-xs font-semibold text-red-600">西语原图 + 中文说明</span>
+                  </div>
+
+                  <div class="grid grid-cols-1 lg:grid-cols-[minmax(360px,0.9fr)_minmax(0,1.1fr)] gap-5 lg:items-start">
+                    <button
+                      type="button"
+                      class="image-zoom-trigger group relative block w-full text-left"
+                      data-lightbox-src="/guides/assets/peru-dhl-fee-concepts.jpg"
+                      data-lightbox-alt="DHL Peru fee concepts explanation"
+                    >
+                      <img
+                        src="/guides/assets/peru-dhl-fee-concepts.jpg"
+                        alt="DHL Peru fee concepts explanation"
+                        class="w-full rounded-3xl border border-red-100 bg-white shadow-sm transition group-hover:brightness-95"
+                        loading="lazy"
+                      />
+                      <span class="absolute right-3 top-3 rounded-full bg-slate-950/80 px-3 py-1.5 text-xs font-semibold text-white">原图 · 点击放大</span>
+                    </button>
+
+                    <div class="rounded-3xl bg-white p-5 md:p-6 shadow-sm">
+                      <p class="font-semibold mb-4">中文理解重点</p>
+                      <div class="grid grid-cols-1 md:grid-cols-2 gap-3 text-sm">
+                        <p class="rounded-2xl bg-slate-50 p-3"><span class="font-semibold">Reintegro Aduanas：</span><span class="text-slate-600">海关税费返还/收回，DHL 已先代客户向海关支付税金，再向客户收回。</span></p>
+                        <p class="rounded-2xl bg-slate-50 p-3"><span class="font-semibold">Gastos de Nacionalización：</span><span class="text-slate-600">进口本地化/清关申报费用，常见于 FOB 不超过 2000 USD 的简化申报。</span></p>
+                        <p class="rounded-2xl bg-slate-50 p-3"><span class="font-semibold">Cargo por aranceles：</span><span class="text-slate-600">关税和海关税费代付服务费。</span></p>
+                        <p class="rounded-2xl bg-slate-50 p-3"><span class="font-semibold">Almacenaje：</span><span class="text-slate-600">仓储费，包裹在放行前保管时产生。</span></p>
+                        <p class="rounded-2xl bg-slate-50 p-3"><span class="font-semibold">Manejo / bróker：</span><span class="text-slate-600">货物处理、文件交接、报关代理协调相关费用。</span></p>
+                        <p class="rounded-2xl bg-slate-50 p-3"><span class="font-semibold">Declaración multilíneas：</span><span class="text-slate-600">多行商品申报费，超过 5 个商品序列/行项目时可能出现。</span></p>
+                        <p class="rounded-2xl bg-slate-50 p-3"><span class="font-semibold">Aforo físico / previo：</span><span class="text-slate-600">海关查验或预查验服务费。</span></p>
+                        <p class="rounded-2xl bg-slate-50 p-3"><span class="font-semibold">Rectificación：</span><span class="text-slate-600">海关申报更正费，客户要求修改申报信息时可能产生。</span></p>
+                        <p class="rounded-2xl bg-slate-50 p-3 md:col-span-2"><span class="font-semibold">Trámites gubernamentales / SENASA：</span><span class="text-slate-600">政府手续、证书或 SENASA 相关代办费用，按商品监管要求决定。</span></p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="mt-6 rounded-3xl border border-slate-100 bg-slate-50 p-5">
+                  <div class="flex flex-col md:flex-row md:items-end md:justify-between gap-3 mb-4">
+                    <div>
+                      <p class="text-xs font-semibold text-slate-400 mb-2">Declaración Simplificada</p>
+                      <h4 class="text-2xl font-semibold tracking-normal">秘鲁申报单与税费清算资料</h4>
+                    </div>
+                    <p class="text-sm text-slate-500 max-w-xl">这组图和上面的税金单对应同一票 Guía/AWB: 4687092480，适合用来核对申报、计税和付款确认。</p>
+                  </div>
+
+                  <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-4">
+                    <button type="button" class="image-zoom-trigger group relative block w-full text-left" data-lightbox-src="/guides/assets/peru-dhl-declaration-1.jpg" data-lightbox-alt="Peru DHL simplified declaration page 1">
+                      <img src="/guides/assets/peru-dhl-declaration-1.jpg" alt="Peru DHL simplified declaration page 1" class="h-80 w-full rounded-3xl border border-slate-200 bg-white object-cover object-top shadow-sm transition group-hover:brightness-95" loading="lazy" />
+                      <span class="absolute right-3 top-3 rounded-full bg-slate-950/80 px-3 py-1.5 text-xs font-semibold text-white">申报单 1</span>
+                    </button>
+                    <button type="button" class="image-zoom-trigger group relative block w-full text-left" data-lightbox-src="/guides/assets/peru-dhl-declaration-2.jpg" data-lightbox-alt="Peru DHL simplified declaration page 2">
+                      <img src="/guides/assets/peru-dhl-declaration-2.jpg" alt="Peru DHL simplified declaration page 2" class="h-80 w-full rounded-3xl border border-slate-200 bg-white object-cover object-top shadow-sm transition group-hover:brightness-95" loading="lazy" />
+                      <span class="absolute right-3 top-3 rounded-full bg-slate-950/80 px-3 py-1.5 text-xs font-semibold text-white">申报单 2</span>
+                    </button>
+                    <button type="button" class="image-zoom-trigger group relative block w-full text-left" data-lightbox-src="/guides/assets/peru-dhl-declaration-3.jpg" data-lightbox-alt="Peru DHL simplified declaration page 3">
+                      <img src="/guides/assets/peru-dhl-declaration-3.jpg" alt="Peru DHL simplified declaration page 3" class="h-80 w-full rounded-3xl border border-slate-200 bg-white object-cover object-top shadow-sm transition group-hover:brightness-95" loading="lazy" />
+                      <span class="absolute right-3 top-3 rounded-full bg-slate-950/80 px-3 py-1.5 text-xs font-semibold text-white">申报单 3</span>
+                    </button>
+                    <button type="button" class="image-zoom-trigger group relative block w-full text-left" data-lightbox-src="/guides/assets/peru-dhl-declaration-4.jpg" data-lightbox-alt="Peru DHL customs tax liquidation detail">
+                      <img src="/guides/assets/peru-dhl-declaration-4.jpg" alt="Peru DHL customs tax liquidation detail" class="h-80 w-full rounded-3xl border border-slate-200 bg-white object-cover object-top shadow-sm transition group-hover:brightness-95" loading="lazy" />
+                      <span class="absolute right-3 top-3 rounded-full bg-slate-950/80 px-3 py-1.5 text-xs font-semibold text-white">税费清算</span>
+                    </button>
+                    <button type="button" class="image-zoom-trigger group relative block w-full text-left md:col-span-2" data-lightbox-src="/guides/assets/peru-dhl-declaration-5.jpg" data-lightbox-alt="Peru DHL customs payment cancellation stamp">
+                      <img src="/guides/assets/peru-dhl-declaration-5.jpg" alt="Peru DHL customs payment cancellation stamp" class="h-80 w-full rounded-3xl border border-slate-200 bg-white object-cover object-top shadow-sm transition group-hover:brightness-95" loading="lazy" />
+                      <span class="absolute right-3 top-3 rounded-full bg-slate-950/80 px-3 py-1.5 text-xs font-semibold text-white">付款确认页</span>
+                    </button>
+                  </div>
+
+                  <p class="text-xs text-slate-400 mt-3">图片较多，点击任意一张可放大查看原始细节。</p>
+                </div>
+              </article>
+
+              <article id="country-chile" class="country-card scroll-mt-24 rounded-[28px] border border-slate-200 bg-white p-6 md:p-7 mt-6">
+                <div class="flex flex-col md:flex-row md:items-start md:justify-between gap-4 mb-6">
+                  <div>
+                    <p class="text-xs font-semibold text-slate-400 mb-3">CL · Chile</p>
+                    <h3 class="text-3xl font-semibold tracking-normal mb-3">智利：Tax 与 Otros Cargos 费用明细</h3>
+                    <p class="text-slate-600 leading-relaxed max-w-3xl">这张智利税金单使用 CLP 计价，费用被分成 Tax 和 Otros Cargos 两组。它很适合说明智利包裹的实际应付金额，通常会同时包含税费、清关服务费以及服务费对应的 IVA。</p>
+                  </div>
+                  <span class="shrink-0 bg-amber-50 text-amber-700 px-3 py-1 rounded-full text-sm font-semibold">税金明细样张</span>
+                </div>
+
+                <div class="grid grid-cols-1 lg:grid-cols-5 gap-6">
+                  <div class="lg:col-span-3">
+                    <button
+                      type="button"
+                      class="image-zoom-trigger group relative block w-full text-left"
+                      data-lightbox-src="/guides/assets/chile-import-charges.jpg"
+                      data-lightbox-alt="Chile import charges breakdown sample"
+                    >
+                      <img
+                        src="/guides/assets/chile-import-charges.jpg"
+                        alt="Chile import charges breakdown sample"
+                        class="w-full rounded-3xl border border-slate-200 bg-white shadow-sm transition group-hover:brightness-95"
+                        loading="lazy"
+                      />
+                      <span class="absolute right-4 top-4 rounded-full bg-slate-950/80 px-4 py-2 text-xs font-semibold text-white backdrop-blur">点击放大</span>
+                    </button>
+                    <p class="text-xs text-slate-400 mt-3">示例：智利进口费用明细，所有金额均为 CLP。实际金额会随商品、申报价值和快递清关方式变化。</p>
+                  </div>
+
+                  <div class="lg:col-span-2 space-y-4">
+                    <div class="rounded-3xl bg-slate-50 p-5">
+                      <p class="font-semibold mb-3">样张费用拆解</p>
+                      <dl class="space-y-3 text-sm">
+                        <div class="flex justify-between gap-4"><dt class="text-slate-500">IVA Derechos (TX)</dt><dd class="font-semibold">CLP 43.511</dd></div>
+                        <div class="flex justify-between gap-4 border-t border-slate-200 pt-3"><dt class="font-semibold">Tax Total</dt><dd class="font-semibold">CLP 43.511</dd></div>
+                        <div class="flex justify-between gap-4"><dt class="text-slate-500">Honorarios Desaduanamiento (L1)</dt><dd class="font-semibold">CLP 46.594</dd></div>
+                        <div class="flex justify-between gap-4"><dt class="text-slate-500">IVA Honorarios Desaduanamiento (L2)</dt><dd class="font-semibold">CLP 8.853</dd></div>
+                        <div class="flex justify-between gap-4 border-t border-slate-200 pt-3"><dt class="font-semibold">Otros Cargos Total</dt><dd class="font-semibold">CLP 55.447</dd></div>
+                        <div class="flex justify-between gap-4 border-t border-slate-300 pt-3 text-base"><dt class="font-semibold">Total a Pagar</dt><dd class="font-semibold">CLP 98.958</dd></div>
+                      </dl>
+                    </div>
+
+                    <div class="rounded-3xl bg-blue-50 p-5">
+                      <p class="font-semibold text-blue-950 mb-3">这张单怎么看</p>
+                      <ul class="space-y-2 text-sm text-blue-950/75 leading-relaxed">
+                        <li>Tax 区块里的 IVA Derechos (TX) 是税费部分，样张为 CLP 43.511。</li>
+                        <li>Otros Cargos 是其他费用，包含清关手续费 Honorarios Desaduanamiento。</li>
+                        <li>IVA Honorarios Desaduanamiento 是清关手续费对应的增值税，样张为 CLP 8.853。</li>
+                        <li>总额 CLP 98.958 = Tax 43.511 + Otros Cargos 55.447。</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </article>
+            </section>
+
+            <section id="continent-africa" class="scroll-mt-24">
+              <div class="flex flex-col md:flex-row md:items-end md:justify-between gap-4 mb-5">
+                <div>
+                  <p class="text-sm font-semibold text-blue-600 mb-2">Africa</p>
+                  <h2 class="text-4xl font-semibold tracking-normal">非洲</h2>
+                </div>
+                <p class="text-slate-500 max-w-xl">非洲国家的税金单常见本地币种、清关服务费和 VAT 分项，建议重点保留账单原图和币种说明。</p>
+              </div>
+
+              <article id="country-egypt" class="country-card scroll-mt-24 rounded-[28px] border border-slate-200 bg-white p-6 md:p-7 mb-6">
+                <div class="flex flex-col md:flex-row md:items-start md:justify-between gap-4 mb-6">
+                  <div>
+                    <p class="text-xs font-semibold text-slate-400 mb-3">EG · Egypt</p>
+                    <h3 class="text-3xl font-semibold tracking-normal mb-3">埃及：ACID 预申报号与 CargoX 注册</h3>
+                    <p class="text-slate-600 leading-relaxed max-w-3xl">按你提供的渠道通知，发往埃及且实际重量超过 50 公斤的快递货件，需要提前提供 ACID 货物预申报号码。ACID 是埃及进口清关所需的 19 位官方编码，通常由埃及本地进口商或收件人在 NAFEZA 系统申请。</p>
+                  </div>
+                  <span class="shrink-0 bg-blue-50 text-blue-700 px-3 py-1 rounded-full text-sm font-semibold">清关资料要求</span>
+                </div>
+
+                <div class="grid grid-cols-1 lg:grid-cols-3 gap-5">
+                  <div class="rounded-3xl bg-slate-50 p-5">
+                    <p class="font-semibold mb-3">必须提前确认</p>
+                    <ul class="space-y-2 text-sm text-slate-600 leading-relaxed">
+                      <li>ACID 货物预申报号码：19 位官方编码。</li>
+                      <li>埃及本地进口商/收件人需在 NAFEZA 注册并申请 ACID。</li>
+                      <li>国内发货方通常无法代替埃及收件人申请 ACID。</li>
+                      <li>国外出口方或相关方需要 CargoX 账号，以便配合 ACI 文件提交。</li>
+                    </ul>
+                  </div>
+
+                  <div class="rounded-3xl bg-red-50 p-5">
+                    <p class="font-semibold text-red-950 mb-3">未提前提供的风险</p>
+                    <ul class="space-y-2 text-sm text-red-950/75 leading-relaxed">
+                      <li>货物到港后无法正常清关。</li>
+                      <li>货物可能被海关强制退回起运地。</li>
+                      <li>埃及海关可能对货件及进口商处以罚款。</li>
+                      <li>往返运费、仓储费、物流延误及商业损失可能由寄件人承担。</li>
+                    </ul>
+                  </div>
+
+                  <div class="rounded-3xl bg-slate-950 p-5 text-white">
+                    <p class="font-semibold mb-3">官方入口</p>
+                    <p class="text-sm text-white/70 leading-relaxed mb-4">CargoX 是埃及 ACI 文件传输常用平台。发货前建议让收件人确认 ACID，并让出口方完成 CargoX 注册与公司验证。</p>
+                    <div class="flex flex-col gap-3">
+                      <a href="https://cargox.digital" target="_blank" class="rounded-full bg-white px-5 py-2 text-center text-sm font-semibold text-slate-950 hover:bg-slate-100">CargoX 平台注册 / 登录</a>
+                      <a href="https://cargox.io/advance-cargo-information-egypt" target="_blank" class="rounded-full bg-white/10 px-5 py-2 text-center text-sm font-semibold text-white hover:bg-white/15">CargoX 埃及 ACI 说明</a>
+                      <a href="https://www.nafeza.gov.eg/en/pages/15" target="_blank" class="rounded-full bg-white/10 px-5 py-2 text-center text-sm font-semibold text-white hover:bg-white/15">NAFEZA ACI 官方说明</a>
+                    </div>
+                  </div>
+                </div>
+              </article>
+
+              <article id="country-zimbabwe" class="country-card scroll-mt-24 rounded-[28px] border border-slate-200 bg-white p-6 md:p-7">
+                <div class="flex flex-col md:flex-row md:items-start md:justify-between gap-4 mb-6">
+                  <div>
+                    <p class="text-xs font-semibold text-slate-400 mb-3">ZW · Zimbabwe</p>
+                    <h3 class="text-3xl font-semibold tracking-normal mb-3">津巴布韦：DHL Fiscal Tax Invoice 税金单</h3>
+                    <p class="text-slate-600 leading-relaxed max-w-3xl">这张是 DHL Express Zimbabwe 的 Fiscal Tax Invoice，目的地 HRE（Harare），货物从 HKG 发出。账单把 Customs Duty、Non-routine Entry 和 VAT 分开列出，最终应付金额为 ZWG 4,023.59。</p>
+                  </div>
+                  <span class="shrink-0 bg-amber-50 text-amber-700 px-3 py-1 rounded-full text-sm font-semibold">DHL 税金单样张</span>
+                </div>
+
+                <div class="grid grid-cols-1 lg:grid-cols-5 gap-6">
+                  <div class="lg:col-span-3">
+                    <button
+                      type="button"
+                      class="image-zoom-trigger group relative block w-full text-left"
+                      data-lightbox-src="/guides/assets/zimbabwe-dhl-fiscal-tax-invoice.jpg"
+                      data-lightbox-alt="DHL Zimbabwe fiscal tax invoice sample"
+                    >
+                      <img
+                        src="/guides/assets/zimbabwe-dhl-fiscal-tax-invoice.jpg"
+                        alt="DHL Zimbabwe fiscal tax invoice sample"
+                        class="w-full rounded-3xl border border-slate-200 bg-white shadow-sm transition group-hover:brightness-95"
+                        loading="lazy"
+                      />
+                      <span class="absolute right-4 top-4 rounded-full bg-slate-950/80 px-4 py-2 text-xs font-semibold text-white backdrop-blur">点击放大</span>
+                    </button>
+                    <p class="text-xs text-slate-400 mt-3">示例：DHL Zimbabwe Fiscal Tax Invoice，Invoice Number: DO0232316，HWB: 1818119063，币种 ZWG。</p>
+                  </div>
+
+                  <div class="lg:col-span-2 space-y-4">
+                    <div class="rounded-3xl bg-slate-50 p-5">
+                      <p class="font-semibold mb-3">样张费用拆解</p>
+                      <dl class="space-y-3 text-sm">
+                        <div class="flex justify-between gap-4"><dt class="text-slate-500">Customs Duty</dt><dd class="font-semibold">ZWG 1,418.59</dd></div>
+                        <div class="flex justify-between gap-4"><dt class="text-slate-500">Non-routine Entry</dt><dd class="font-semibold">ZWG 2,605.00</dd></div>
+                        <div class="flex justify-between gap-4"><dt class="text-slate-500">VAT on Non-routine Entry</dt><dd class="font-semibold">ZWG 349.59</dd></div>
+                        <div class="flex justify-between gap-4 border-t border-slate-200 pt-3"><dt class="font-semibold">Sub-total Net</dt><dd class="font-semibold">ZWG 3,674.00</dd></div>
+                        <div class="flex justify-between gap-4 border-t border-slate-300 pt-3 text-base"><dt class="font-semibold">Please Pay</dt><dd class="font-semibold">ZWG 4,023.59</dd></div>
+                      </dl>
+                    </div>
+
+                    <div class="rounded-3xl bg-blue-50 p-5">
+                      <p class="font-semibold text-blue-950 mb-3">这张单怎么看</p>
+                      <ul class="space-y-2 text-sm text-blue-950/75 leading-relaxed">
+                        <li>Customs Duty 是海关关税部分，样张中 VAT 为 0。</li>
+                        <li>Non-routine Entry 是 DHL/清关相关的非标准入境处理费用。</li>
+                        <li>VAT 只出现在 Non-routine Entry 这一行，金额 ZWG 349.59。</li>
+                        <li>账单脚注提示系统显示为 ZWL/ZWG 的说明，实际付款时应以账单展示和 DHL 通知为准。</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </article>
+            </section>
+
+            <section id="continent-oceania" class="scroll-mt-24 rounded-[28px] border border-dashed border-slate-300 bg-white p-7">
+              <p class="text-sm font-semibold text-blue-600 mb-2">Oceania</p>
+              <h2 class="text-3xl font-semibold tracking-normal mb-3">大洋洲</h2>
+              <p class="text-slate-600">待补国家：澳大利亚、新西兰等。澳大利亚可重点记录 GST、低价值包裹规则和 DHL/UPS/FedEx 清关费。</p>
+            </section>
+
+            <section id="carrier-guide" class="scroll-mt-24 rounded-[28px] border border-slate-200 bg-white p-7 md:p-8">
+              <p class="text-sm font-semibold text-blue-600 mb-3">专业知识</p>
+              <h2 class="text-3xl font-semibold tracking-normal mb-6">DHL、UPS、FedEx 的税金处理差异</h2>
+              <div class="grid grid-cols-1 md:grid-cols-3 gap-5">
+                <div class="rounded-3xl border border-slate-200 p-5">
+                  <h3 class="text-xl font-semibold mb-3">DHL</h3>
+                  <p class="text-sm text-slate-600 leading-relaxed">常见提示包括 shipment related fees、payment required、on hold 等。美国/加拿大 DHL 通常最适合先用转单号确认。</p>
+                </div>
+                <div class="rounded-3xl border border-slate-200 p-5">
+                  <h3 class="text-xl font-semibold mb-3">UPS</h3>
+                  <p class="text-sm text-slate-600 leading-relaxed">费用可能包含 duty、taxes 和 brokerage / advance funds 类服务费，建议在派送前确认。</p>
+                </div>
+                <div class="rounded-3xl border border-slate-200 p-5">
+                  <h3 class="text-xl font-semibold mb-3">FedEx</h3>
+                  <p class="text-sm text-slate-600 leading-relaxed">可能通过 FedEx Import Tool、邮件或账单通知税金；支付链接过期时可能转为账单支付。</p>
+                </div>
+              </div>
+            </section>
+
+            <section id="risk-notice" class="scroll-mt-24 rounded-[28px] border border-red-100 bg-red-50/60 p-7 md:p-8">
+              <p class="text-sm font-semibold text-red-600 mb-3">重要通知</p>
+              <h2 class="text-3xl font-semibold tracking-normal mb-5">DDU 出货和欧洲 FedEx 关税风险</h2>
+              <div class="grid grid-cols-1 lg:grid-cols-2 gap-5">
+                <div class="rounded-3xl bg-white p-5 border border-red-100">
+                  <p class="font-semibold mb-3">1. UPS / DHL / FedEx 可能先派送后结算</p>
+                  <p class="text-sm text-slate-600 leading-relaxed">清关放行后快递公司可能优先派件；如果收件人未缴关税及杂费，费用可能自动转由寄件人承担。无论货物已经签收、销毁或退回，关税及海关相关费用都可能继续向寄件方追偿。</p>
+                  <p class="text-sm text-red-700 font-semibold mt-4">DDU 出货务必提前确认收件人已完税，并确认关税承担方和付款方式。</p>
+                </div>
+                <div class="rounded-3xl bg-white p-5 border border-red-100">
+                  <p class="font-semibold mb-3">2. FedEx 欧洲关税反弹高发</p>
+                  <p class="text-sm text-slate-600 leading-relaxed">近期 FedEx 欧洲关税账单反弹较多，发欧洲建议强制提供收件人邮箱，并提醒收件人跟进清关通知、及时缴税。产生关税账单后应及时处理，避免拖欠税金长期追偿。</p>
+                  <p class="text-sm text-slate-500 mt-4">实操建议：发货前把收件邮箱、电话、税金承担方写清楚；收到 duty / tax / import fees 通知后尽快核对转单号和金额。</p>
+                </div>
+              </div>
+            </section>
+
+            <section id="status-guide" class="scroll-mt-24 rounded-[28px] border border-slate-200 bg-white p-7 md:p-8">
+              <p class="text-sm font-semibold text-blue-600 mb-3">状态解释</p>
+              <h2 class="text-3xl font-semibold tracking-normal mb-6">常见英文状态怎么理解</h2>
+              <div class="overflow-hidden rounded-3xl border border-slate-200">
+                <table class="w-full text-left text-sm">
+                  <thead class="bg-slate-50 text-slate-500">
+                    <tr>
+                      <th class="px-5 py-4 font-semibold">状态或关键词</th>
+                      <th class="px-5 py-4 font-semibold">含义</th>
+                      <th class="px-5 py-4 font-semibold">建议动作</th>
+                    </tr>
+                  </thead>
+                  <tbody class="divide-y divide-slate-100">
+                    <tr>
+                      <td class="px-5 py-4 font-semibold">On hold awaiting payment</td>
+                      <td class="px-5 py-4 text-slate-600">通常表示税费或相关费用待支付。</td>
+                      <td class="px-5 py-4 text-slate-600">先用转单号确认金额和可代付性。</td>
+                    </tr>
+                    <tr>
+                      <td class="px-5 py-4 font-semibold">Payment is received</td>
+                      <td class="px-5 py-4 text-slate-600">支付已被系统记录。</td>
+                      <td class="px-5 py-4 text-slate-600">继续关注是否恢复派送。</td>
+                    </tr>
+                    <tr>
+                      <td class="px-5 py-4 font-semibold">Duties and taxes / Import fees</td>
+                      <td class="px-5 py-4 text-slate-600">进口税、VAT/GST 或快递垫付费用。</td>
+                      <td class="px-5 py-4 text-slate-600">确认是否为官方通知，避免钓鱼链接。</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </section>
+
+            <section id="bill-samples" class="scroll-mt-24 rounded-[28px] bg-slate-950 text-white p-7 md:p-8">
+              <p class="text-sm font-semibold text-white/45 mb-3">Bill Samples</p>
+              <h2 class="text-3xl font-semibold tracking-normal mb-4">税金单样张库</h2>
+              <p class="text-white/65 leading-relaxed mb-6">目前已放入越南 DHL、印度尼西亚 DHL、印度 FedEx、加拿大 UPS、墨西哥 UPS、秘鲁 DHL、智利税金明细、津巴布韦 DHL 八类样张。后续你补充图片后，可以按国家和快递公司继续扩展。</p>
+              <div class="flex flex-wrap gap-3">
+                <a href="#country-vietnam" class="inline-flex bg-white text-slate-950 px-5 py-2 rounded-full text-sm font-semibold">查看越南样张</a>
+                <a href="#country-indonesia" class="inline-flex bg-white/10 text-white px-5 py-2 rounded-full text-sm font-semibold hover:bg-white/15">查看印尼样张</a>
+                <a href="#country-india" class="inline-flex bg-white/10 text-white px-5 py-2 rounded-full text-sm font-semibold hover:bg-white/15">查看印度样张</a>
+                <a href="#country-canada" class="inline-flex bg-white/10 text-white px-5 py-2 rounded-full text-sm font-semibold hover:bg-white/15">查看加拿大样张</a>
+                <a href="#country-mexico" class="inline-flex bg-white/10 text-white px-5 py-2 rounded-full text-sm font-semibold hover:bg-white/15">查看墨西哥样张</a>
+                <a href="#country-peru" class="inline-flex bg-white/10 text-white px-5 py-2 rounded-full text-sm font-semibold hover:bg-white/15">查看秘鲁样张</a>
+                <a href="#country-chile" class="inline-flex bg-white/10 text-white px-5 py-2 rounded-full text-sm font-semibold hover:bg-white/15">查看智利样张</a>
+                <a href="#country-zimbabwe" class="inline-flex bg-white/10 text-white px-5 py-2 rounded-full text-sm font-semibold hover:bg-white/15">查看津巴布韦样张</a>
+              </div>
+            </section>
+
+            <section id="official-sources" class="scroll-mt-24 rounded-[28px] border border-slate-200 bg-white p-7 md:p-8">
+              <p class="text-sm font-semibold text-blue-600 mb-3">References</p>
+              <h2 class="text-3xl font-semibold tracking-normal mb-5">官方资料来源</h2>
+              <p class="text-slate-600 leading-relaxed mb-6">关税政策会变化，实际缴税规则以目的国海关和快递公司官方通知为准。本页用于帮助理解流程，不替代法律或报关意见。</p>
+              <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-sm">
+                <a class="rounded-2xl border border-slate-200 p-5 hover:bg-slate-50" href="https://www.help.cbp.gov/s/article/Article-1050" target="_blank">美国 CBP：de minimis duty waiver policy</a>
+                <a class="rounded-2xl border border-slate-200 p-5 hover:bg-slate-50" href="https://www.gov.uk/goods-sent-from-abroad/tax-and-duty" target="_blank">英国 GOV.UK：Tax and duty for goods sent from abroad</a>
+                <a class="rounded-2xl border border-slate-200 p-5 hover:bg-slate-50" href="https://www.gov.uk/guidance/vat-and-overseas-goods-sold-directly-to-customers-in-the-uk" target="_blank">HMRC：VAT and overseas goods sold directly to UK customers</a>
+                <a class="rounded-2xl border border-slate-200 p-5 hover:bg-slate-50" href="https://taxation-customs.ec.europa.eu/customs/customs-procedures-import-and-export/customs-operations/customs-formalities-low-value-consignments_en" target="_blank">欧盟：Low value consignments customs formalities</a>
+                <a class="rounded-2xl border border-slate-200 p-5 hover:bg-slate-50" href="https://www.consilium.europa.eu/en/press/press-releases/2026/02/12/customs-duties-on-low-value-goods-council-gives-final-green-light-to-new-eu-rules/" target="_blank">欧盟理事会：2026 low-value goods customs duties rules</a>
+                <a class="rounded-2xl border border-slate-200 p-5 hover:bg-slate-50" href="https://www.dhl.com/discover/en-vn/logistics-advice/import-export-advice/what-is-import-duty" target="_blank">DHL Vietnam：What is Import Duty</a>
+                <a class="rounded-2xl border border-slate-200 p-5 hover:bg-slate-50" href="https://www.dhl.com/discover/en-vn/logistics-advice/import-export-advice/vietnam-import-tax-duties" target="_blank">DHL Vietnam：Vietnam import taxes and duties</a>
+                <a class="rounded-2xl border border-slate-200 p-5 hover:bg-slate-50" href="https://wwwmat.sat.gob.mx/articulo/19848/articulo-1" target="_blank">Mexico SAT：IVA tasa 16%</a>
+                <a class="rounded-2xl border border-slate-200 p-5 hover:bg-slate-50" href="https://es-us-apps.ups.com/us/en/shipping/international-shipping/import-fees" target="_blank">UPS：Understanding import fees</a>
+                <a class="rounded-2xl border border-slate-200 p-5 hover:bg-slate-50" href="https://cargox.digital" target="_blank">CargoX Platform：注册 / 登录入口</a>
+                <a class="rounded-2xl border border-slate-200 p-5 hover:bg-slate-50" href="https://cargox.io/advance-cargo-information-egypt" target="_blank">CargoX：Egypt ACI filing 说明</a>
+                <a class="rounded-2xl border border-slate-200 p-5 hover:bg-slate-50" href="https://www.nafeza.gov.eg/en/pages/15" target="_blank">NAFEZA：Advance Cargo Information System</a>
+                <a class="rounded-2xl border border-slate-200 p-5 hover:bg-slate-50" href="https://developers.google.com/search/docs/fundamentals/creating-helpful-content" target="_blank">Google：Helpful, reliable, people-first content</a>
+              </div>
+            </section>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <footer class="bg-white border-t border-slate-200">
+      <div class="px-5 md:px-8 py-8 flex flex-col md:flex-row md:items-center md:justify-between gap-4 text-sm text-slate-500">
+        <p>© 2025 货代导航网 · 关税知识库</p>
+        <div class="flex gap-4">
+          <a href="/" class="hover:text-slate-950">返回首页</a>
+          <a href="/#contact" class="hover:text-slate-950">发单号查询</a>
+        </div>
+      </div>
+    </footer>
+
+    <div
+      id="imageLightbox"
+      class="image-lightbox fixed inset-0 z-[100] bg-slate-950/90 p-4 md:p-8"
+      aria-hidden="true"
+    >
+      <button
+        type="button"
+        id="closeLightbox"
+        class="absolute right-4 top-4 md:right-8 md:top-8 rounded-full bg-white px-4 py-2 text-sm font-semibold text-slate-950 hover:bg-slate-100"
+      >
+        关闭
+      </button>
+      <div class="flex h-full items-center justify-center">
+        <img
+          id="lightboxImage"
+          src=""
+          alt=""
+          class="max-w-full rounded-2xl bg-white shadow-2xl"
+        />
+      </div>
+    </div>
+
+    <script>
+      const lightbox = document.getElementById("imageLightbox");
+      const lightboxImage = document.getElementById("lightboxImage");
+      const closeLightbox = document.getElementById("closeLightbox");
+
+      function openLightbox(src, alt) {
+        lightboxImage.src = src;
+        lightboxImage.alt = alt || "";
+        lightbox.classList.add("is-open");
+        lightbox.setAttribute("aria-hidden", "false");
+        document.body.style.overflow = "hidden";
+      }
+
+      function hideLightbox() {
+        lightbox.classList.remove("is-open");
+        lightbox.setAttribute("aria-hidden", "true");
+        document.body.style.overflow = "";
+      }
+
+      document.querySelectorAll("[data-lightbox-src]").forEach((trigger) => {
+        trigger.addEventListener("click", () => {
+          openLightbox(trigger.dataset.lightboxSrc, trigger.dataset.lightboxAlt);
+        });
+      });
+
+      closeLightbox.addEventListener("click", hideLightbox);
+      lightbox.addEventListener("click", (event) => {
+        if (event.target === lightbox) hideLightbox();
+      });
+      document.addEventListener("keydown", (event) => {
+        if (event.key === "Escape") hideLightbox();
+      });
+    </script>
+  </body>
+</html>
