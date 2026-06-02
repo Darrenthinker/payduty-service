@@ -1183,54 +1183,108 @@
                 <div class="flex flex-col md:flex-row md:items-start md:justify-between gap-4 mb-6">
                   <div>
                     <p class="text-xs font-semibold text-slate-400 mb-3">CL · Chile</p>
-                    <h3 class="text-3xl font-semibold tracking-normal mb-3">智利：Tax 与 Otros Cargos 费用明细</h3>
-                    <p class="text-slate-600 leading-relaxed max-w-3xl">这张智利税金单使用 CLP 计价，费用被分成 Tax 和 Otros Cargos 两组。它很适合说明智利包裹的实际应付金额，通常会同时包含税费、清关服务费以及服务费对应的 IVA。</p>
+                    <h3 class="text-3xl font-semibold tracking-normal mb-3">智利：DHL 税金单、费用明细与进口申报单</h3>
+                    <p class="text-slate-600 leading-relaxed max-w-3xl">这组智利资料包含 DHL Nota de Cobro、网页费用拆解和 Servicio Nacional de Aduanas 的 Declaración de Ingreso。它可以把客户看到的 CLP 应付金额、DHL 代付海关款项和正式进口申报税费对应起来。</p>
                   </div>
-                  <span class="shrink-0 bg-amber-50 text-amber-700 px-3 py-1 rounded-full text-sm font-semibold">税金明细样张</span>
+                  <span class="shrink-0 bg-amber-50 text-amber-700 px-3 py-1 rounded-full text-sm font-semibold">税金单 + 申报单</span>
                 </div>
 
-                <div class="grid grid-cols-1 lg:grid-cols-5 gap-6">
-                  <div class="lg:col-span-3">
+                <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+                  <div>
                     <button
                       type="button"
                       class="image-zoom-trigger group relative block w-full text-left"
-                      data-lightbox-src="/guides/assets/chile-import-charges.jpg"
-                      data-lightbox-alt="Chile import charges breakdown sample"
+                      data-lightbox-src="/guides/assets/chile-dhl-charge-breakdown.jpg"
+                      data-lightbox-alt="DHL Chile charge breakdown sample"
                     >
                       <img
-                        src="/guides/assets/chile-import-charges.jpg"
-                        alt="Chile import charges breakdown sample"
-                        class="w-full rounded-3xl border border-slate-200 bg-white shadow-sm transition group-hover:brightness-95"
+                        src="/guides/assets/chile-dhl-charge-breakdown.jpg"
+                        alt="DHL Chile charge breakdown sample"
+                        class="h-80 w-full rounded-3xl border border-slate-200 bg-white object-cover object-top shadow-sm transition group-hover:brightness-95"
                         loading="lazy"
                       />
-                      <span class="absolute right-4 top-4 rounded-full bg-slate-950/80 px-4 py-2 text-xs font-semibold text-white backdrop-blur">点击放大</span>
+                      <span class="absolute right-4 top-4 rounded-full bg-slate-950/80 px-4 py-2 text-xs font-semibold text-white backdrop-blur">费用明细</span>
                     </button>
-                    <p class="text-xs text-slate-400 mt-3">示例：智利进口费用明细，所有金额均为 CLP。实际金额会随商品、申报价值和快递清关方式变化。</p>
                   </div>
 
-                  <div class="lg:col-span-2 space-y-4">
-                    <div class="rounded-3xl bg-slate-50 p-5">
-                      <p class="font-semibold mb-3">样张费用拆解</p>
-                      <dl class="space-y-3 text-sm">
-                        <div class="flex justify-between gap-4"><dt class="text-slate-500">IVA Derechos (TX)</dt><dd class="font-semibold">CLP 43.511</dd></div>
-                        <div class="flex justify-between gap-4 border-t border-slate-200 pt-3"><dt class="font-semibold">Tax Total</dt><dd class="font-semibold">CLP 43.511</dd></div>
-                        <div class="flex justify-between gap-4"><dt class="text-slate-500">Honorarios Desaduanamiento (L1)</dt><dd class="font-semibold">CLP 46.594</dd></div>
-                        <div class="flex justify-between gap-4"><dt class="text-slate-500">IVA Honorarios Desaduanamiento (L2)</dt><dd class="font-semibold">CLP 8.853</dd></div>
-                        <div class="flex justify-between gap-4 border-t border-slate-200 pt-3"><dt class="font-semibold">Otros Cargos Total</dt><dd class="font-semibold">CLP 55.447</dd></div>
-                        <div class="flex justify-between gap-4 border-t border-slate-300 pt-3 text-base"><dt class="font-semibold">Total a Pagar</dt><dd class="font-semibold">CLP 98.958</dd></div>
-                      </dl>
-                    </div>
-
-                    <div class="rounded-3xl bg-blue-50 p-5">
-                      <p class="font-semibold text-blue-950 mb-3">这张单怎么看</p>
-                      <ul class="space-y-2 text-sm text-blue-950/75 leading-relaxed">
-                        <li>Tax 区块里的 IVA Derechos (TX) 是税费部分，样张为 CLP 43.511。</li>
-                        <li>Otros Cargos 是其他费用，包含清关手续费 Honorarios Desaduanamiento。</li>
-                        <li>IVA Honorarios Desaduanamiento 是清关手续费对应的增值税，样张为 CLP 8.853。</li>
-                        <li>总额 CLP 98.958 = Tax 43.511 + Otros Cargos 55.447。</li>
-                      </ul>
-                    </div>
+                  <div>
+                    <button
+                      type="button"
+                      class="image-zoom-trigger group relative block w-full text-left"
+                      data-lightbox-src="/guides/assets/chile-dhl-nota-de-cobro.jpg"
+                      data-lightbox-alt="DHL Chile nota de cobro customs charge sample"
+                    >
+                      <img
+                        src="/guides/assets/chile-dhl-nota-de-cobro.jpg"
+                        alt="DHL Chile nota de cobro customs charge sample"
+                        class="h-80 w-full rounded-3xl border border-slate-200 bg-white object-cover object-top shadow-sm transition group-hover:brightness-95"
+                        loading="lazy"
+                      />
+                      <span class="absolute right-4 top-4 rounded-full bg-slate-950/80 px-4 py-2 text-xs font-semibold text-white backdrop-blur">Nota de Cobro</span>
+                    </button>
                   </div>
+
+                  <div>
+                    <button
+                      type="button"
+                      class="image-zoom-trigger group relative block w-full text-left"
+                      data-lightbox-src="/guides/assets/chile-import-declaration.jpg"
+                      data-lightbox-alt="Chile import declaration ingreso sample"
+                    >
+                      <img
+                        src="/guides/assets/chile-import-declaration.jpg"
+                        alt="Chile import declaration ingreso sample"
+                        class="h-80 w-full rounded-3xl border border-slate-200 bg-white object-cover object-top shadow-sm transition group-hover:brightness-95"
+                        loading="lazy"
+                      />
+                      <span class="absolute right-4 top-4 rounded-full bg-slate-950/80 px-4 py-2 text-xs font-semibold text-white backdrop-blur">申报单</span>
+                    </button>
+                  </div>
+                </div>
+
+                <p class="text-xs text-slate-400 mt-3">示例：DHL Chile Nota de Cobro No. 2623859；AWB 4117387713；Declaración de Ingreso ID 0239066886；Fecha de aceptación 30/05/2026。</p>
+
+                <div class="mt-6 grid grid-cols-1 lg:grid-cols-3 gap-4">
+                  <div class="rounded-3xl bg-slate-50 p-5">
+                    <p class="font-semibold mb-3">费用明细拆解</p>
+                    <dl class="space-y-3 text-sm">
+                      <div class="flex justify-between gap-4"><dt class="text-slate-500">IVA Derechos (TX)</dt><dd class="font-semibold">CLP 13.880</dd></div>
+                      <div class="flex justify-between gap-4"><dt class="text-slate-500">Derechos Aduaneros (DT)</dt><dd class="font-semibold">CLP 4.140</dd></div>
+                      <div class="flex justify-between gap-4 border-t border-slate-200 pt-3"><dt class="font-semibold">Total a Pagar</dt><dd class="font-semibold">CLP 18.019</dd></div>
+                    </dl>
+                  </div>
+
+                  <div class="rounded-3xl bg-slate-950 p-5 text-white">
+                    <p class="font-semibold mb-3">DHL Nota de Cobro</p>
+                    <dl class="space-y-3 text-sm">
+                      <div class="flex justify-between gap-4"><dt class="text-white/55">Total USD</dt><dd class="font-semibold">20.11</dd></div>
+                      <div class="flex justify-between gap-4"><dt class="text-white/55">Tipo de cambio</dt><dd class="font-semibold">896.03</dd></div>
+                      <div class="flex justify-between gap-4"><dt class="text-white/55">Cargo Aduanal</dt><dd class="font-semibold">$18.019</dd></div>
+                      <div class="flex justify-between gap-4 border-t border-white/15 pt-3"><dt class="font-semibold">Total a Pagar</dt><dd class="font-semibold">$18.019</dd></div>
+                    </dl>
+                    <p class="mt-4 text-xs text-white/60 leading-relaxed">Nota de Cobro 说明该 Cargo Aduanal 是 DHL 代进口人向海关支付后收回的金额。</p>
+                  </div>
+
+                  <div class="rounded-3xl bg-slate-50 p-5">
+                    <p class="font-semibold mb-3">申报单关键字段</p>
+                    <dl class="space-y-3 text-sm">
+                      <div class="flex justify-between gap-4"><dt class="text-slate-500">Importador</dt><dd class="font-semibold">CENCOSUD CHILE</dd></div>
+                      <div class="flex justify-between gap-4"><dt class="text-slate-500">Despachador</dt><dd class="font-semibold">DHL</dd></div>
+                      <div class="flex justify-between gap-4"><dt class="text-slate-500">Pais Origen</dt><dd class="font-semibold">China</dd></div>
+                      <div class="flex justify-between gap-4"><dt class="text-slate-500">Mercancia</dt><dd class="font-semibold">Camiseta de Hombre</dd></div>
+                      <div class="flex justify-between gap-4"><dt class="text-slate-500">Valor CIF</dt><dd class="font-semibold">US$ 76.93</dd></div>
+                    </dl>
+                  </div>
+                </div>
+
+                <div class="mt-4 rounded-3xl bg-blue-50 p-5">
+                  <p class="font-semibold text-blue-950 mb-3">这组智利单怎么看</p>
+                  <ul class="grid grid-cols-1 md:grid-cols-2 gap-2 text-sm text-blue-950/75 leading-relaxed">
+                    <li>Declaración de Ingreso 是智利海关进口申报单，可核对进口人、运输单号、商品、CIF 和计税结果。</li>
+                    <li>Derechos Aduaneros (DT) 是关税/海关权利金，IVA Derechos (TX) 是该进口环节对应的 IVA。</li>
+                    <li>DHL Nota de Cobro 里的 Cargo Aduanal 与网页 Total a Pagar 均为 CLP 18.019，说明这是 DHL 向客户收回的海关代付款。</li>
+                    <li>核对时建议用 AWB 4117387713、Declaración ID 0239066886 和 Nota de Cobro No. 2623859 交叉确认。</li>
+                  </ul>
                 </div>
               </article>
             </section>
