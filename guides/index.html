@@ -1274,23 +1274,23 @@
                   <div class="flex flex-col md:flex-row md:items-start md:justify-between gap-4 mb-6">
                     <div>
                       <p class="text-xs font-semibold text-slate-400 mb-3">CA · Canada</p>
-                      <h3 class="text-3xl font-semibold tracking-normal mb-3">加拿大：UPS 税金与清关经纪费组成</h3>
-                      <p class="text-slate-600 leading-relaxed max-w-3xl">加拿大 UPS 税金单常见两种页面：一种是待支付的 import charges 明细，另一种是支付成功后的 Thank You 页面。两种都会把 Government Charges 和 UPS Customs Brokerage Charges 分开，第二张还会显示 Payment Confirmation Number，适合核对是否已经完成代付。</p>
+                      <h3 class="text-3xl font-semibold tracking-normal mb-3">加拿大：UPS 进口费用预付与支付确认</h3>
+                      <p class="text-slate-600 leading-relaxed max-w-3xl">这组截图来自 UPS Canada 包裹，Tracking Details 先提示 CAD 23.17 import fees due，进入 Pre-Pay Delivery Fees 后可看到 Total Due CAD 16.39，支付完成页会显示 Payment Confirmation Number。加拿大 UPS 页面会把 Government Charges、HST/GST/PST 和 UPS Customs Brokerage Charges 分开，适合核对代付是否完成。</p>
                     </div>
-                    <span class="shrink-0 bg-amber-50 text-amber-700 px-3 py-1 rounded-full text-sm font-semibold">费用明细样张</span>
+                    <span class="shrink-0 bg-amber-50 text-amber-700 px-3 py-1 rounded-full text-sm font-semibold">UPS 税金样张</span>
                   </div>
 
-                  <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+                  <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
                     <div>
                       <button
                         type="button"
                         class="image-zoom-trigger group relative block w-full text-left"
-                        data-lightbox-src="/guides/assets/canada-ups-import-charges.jpg"
-                        data-lightbox-alt="UPS Canada import charges detail sample"
+                        data-lightbox-src="/guides/assets/canada-ups-tracking-import-fees.jpg"
+                        data-lightbox-alt="UPS Canada tracking page import fees due sample"
                       >
                         <img
-                          src="/guides/assets/canada-ups-import-charges.jpg"
-                          alt="UPS Canada import charges detail sample"
+                          src="/guides/assets/canada-ups-tracking-import-fees.jpg"
+                          alt="UPS Canada tracking page import fees due sample"
                           class="w-full rounded-3xl border border-slate-200 bg-white shadow-sm transition group-hover:brightness-95"
                           loading="lazy"
                         />
@@ -1298,18 +1298,38 @@
                           点击放大
                         </span>
                       </button>
-                      <p class="text-xs text-slate-400 mt-3">示例 1：UPS Canada 进口费用明细，币种 CAD，Import Date: 05/26/2026。不同省份、申报价值和清关方式会影响最终金额。</p>
+                      <p class="text-xs text-slate-400 mt-3">追踪页示例：Tracking Number: 1ZH0720H0406172336，状态 On the Way，Ship To: TORONTO, ON CA，提示 CAD 23.17 import fees must be paid。</p>
                     </div>
 
                     <div>
                       <button
                         type="button"
                         class="image-zoom-trigger group relative block w-full text-left"
-                        data-lightbox-src="/guides/assets/canada-ups-payment-confirmation.jpg"
+                        data-lightbox-src="/guides/assets/canada-ups-prepay-delivery-fees.jpg"
+                        data-lightbox-alt="UPS Canada pre-pay delivery fees import charges sample"
+                      >
+                        <img
+                          src="/guides/assets/canada-ups-prepay-delivery-fees.jpg"
+                          alt="UPS Canada pre-pay delivery fees import charges sample"
+                          class="w-full rounded-3xl border border-slate-200 bg-white shadow-sm transition group-hover:brightness-95"
+                          loading="lazy"
+                        />
+                        <span class="absolute right-4 top-4 rounded-full bg-slate-950/80 px-4 py-2 text-xs font-semibold text-white backdrop-blur">
+                          点击放大
+                        </span>
+                      </button>
+                      <p class="text-xs text-slate-400 mt-3">费用页示例：Invoice Number: 5788364553，Import Date: 06/02/2026，Shipper: LOT GLOBAL LOAISTICS，Total Due: CA$16.39。</p>
+                    </div>
+
+                    <div>
+                      <button
+                        type="button"
+                        class="image-zoom-trigger group relative block w-full text-left"
+                        data-lightbox-src="/guides/assets/canada-ups-payment-confirmation-2026-06.jpg"
                         data-lightbox-alt="UPS Canada payment confirmation import charges sample"
                       >
                         <img
-                          src="/guides/assets/canada-ups-payment-confirmation.jpg"
+                          src="/guides/assets/canada-ups-payment-confirmation-2026-06.jpg"
                           alt="UPS Canada payment confirmation import charges sample"
                           class="w-full rounded-3xl border border-slate-200 bg-white shadow-sm transition group-hover:brightness-95"
                           loading="lazy"
@@ -1318,46 +1338,33 @@
                           点击放大
                         </span>
                       </button>
-                      <p class="text-xs text-slate-400 mt-3">示例 2：UPS Canada 支付完成页，Tracking Number: 1Z0E319J6720804357，Payment Confirmation Number: 4YT11102GT671002R，Import Date: 05/08/2026。</p>
+                      <p class="text-xs text-slate-400 mt-3">支付完成页示例：Payment Confirmation Number: 48C96531MY7265509，Total Paid: CA$16.39，Billing and Charges to: PAYPAL。</p>
                     </div>
                   </div>
 
                   <div class="mt-6 grid grid-cols-1 lg:grid-cols-2 gap-4">
                     <div class="rounded-3xl bg-slate-50 p-5">
-                      <p class="font-semibold mb-3">样张 1 费用拆解</p>
+                      <p class="font-semibold mb-3">样张费用拆解</p>
                       <dl class="space-y-3 text-sm">
-                        <div class="flex justify-between gap-4"><dt class="text-slate-500">Government Charges</dt><dd class="font-semibold">CA$7.15</dd></div>
-                        <div class="flex justify-between gap-4"><dt class="text-slate-500">HST or GST + PST</dt><dd class="font-semibold">CA$7.15</dd></div>
+                        <div class="flex justify-between gap-4"><dt class="text-slate-500">Government Charges</dt><dd class="font-semibold">CA$3.23</dd></div>
+                        <div class="flex justify-between gap-4"><dt class="text-slate-500">HST or GST + PST</dt><dd class="font-semibold">CA$3.23</dd></div>
                         <div class="flex justify-between gap-4"><dt class="text-slate-500">UPS Customs Brokerage Charges</dt><dd class="font-semibold">CA$13.16</dd></div>
                         <div class="flex justify-between gap-4"><dt class="text-slate-500">Brokerage Fee</dt><dd class="font-semibold">CA$11.65</dd></div>
                         <div class="flex justify-between gap-4"><dt class="text-slate-500">Brokerage GST/HST</dt><dd class="font-semibold">CA$1.51</dd></div>
-                        <div class="flex justify-between gap-4 border-t border-slate-200 pt-3"><dt class="font-semibold">Total Due</dt><dd class="font-semibold">CA$20.31</dd></div>
+                        <div class="flex justify-between gap-4 border-t border-slate-200 pt-3"><dt class="font-semibold">Total Due / Paid</dt><dd class="font-semibold">CA$16.39</dd></div>
                       </dl>
+                      <p class="mt-4 text-xs text-slate-500 leading-relaxed">追踪页提示的 CAD 23.17 与费用页的 CA$16.39 不一致时，以进入支付页后的 Total Due / Total Paid 为准，同时留意是否包含额外到付或更新费用。</p>
                     </div>
 
-                    <div class="rounded-3xl bg-slate-50 p-5">
-                      <p class="font-semibold mb-3">样张 2 费用拆解</p>
-                      <dl class="space-y-3 text-sm">
-                        <div class="flex justify-between gap-4"><dt class="text-slate-500">Government Charges</dt><dd class="font-semibold">CA$25.49</dd></div>
-                        <div class="flex justify-between gap-4"><dt class="text-slate-500">HST or GST + PST</dt><dd class="font-semibold">CA$8.51</dd></div>
-                        <div class="flex justify-between gap-4"><dt class="text-slate-500">Other Government Charges</dt><dd class="font-semibold">CA$16.98</dd></div>
-                        <div class="flex justify-between gap-4"><dt class="text-slate-500">UPS Customs Brokerage Charges</dt><dd class="font-semibold">CA$13.39</dd></div>
-                        <div class="flex justify-between gap-4"><dt class="text-slate-500">Brokerage Fee</dt><dd class="font-semibold">CA$11.65</dd></div>
-                        <div class="flex justify-between gap-4"><dt class="text-slate-500">Brokerage GST/HST</dt><dd class="font-semibold">CA$0.58</dd></div>
-                        <div class="flex justify-between gap-4"><dt class="text-slate-500">Brokerage QST</dt><dd class="font-semibold">CA$1.16</dd></div>
-                        <div class="flex justify-between gap-4 border-t border-slate-200 pt-3"><dt class="font-semibold">Total Paid</dt><dd class="font-semibold">CA$38.88</dd></div>
-                      </dl>
+                    <div class="rounded-3xl bg-blue-50 p-5">
+                      <p class="font-semibold text-blue-950 mb-3">这类加拿大 UPS 单怎么看</p>
+                      <ul class="space-y-2 text-sm text-blue-950/75 leading-relaxed">
+                        <li>Tracking Details 出现 import fees must be paid 时，说明收件前存在进口费用待处理。</li>
+                        <li>Government Charges 是政府税费部分，本例只有 HST or GST + PST；不同省份和货物类型可能显示其他税费项目。</li>
+                        <li>UPS Customs Brokerage Charges 是 UPS 清关经纪费用，本例由 Brokerage Fee 和 Brokerage GST/HST 组成。</li>
+                        <li>支付完成后重点核对 Tracking Number、Invoice Number、Payment Confirmation Number、Total Paid 和币种 CAD。</li>
+                      </ul>
                     </div>
-                  </div>
-
-                  <div class="mt-4 rounded-3xl bg-blue-50 p-5">
-                    <p class="font-semibold text-blue-950 mb-3">这类加拿大 UPS 单怎么看</p>
-                    <ul class="grid grid-cols-1 md:grid-cols-2 gap-2 text-sm text-blue-950/75 leading-relaxed">
-                      <li>Government Charges 是政府税费部分，可能只有 HST/GST/PST，也可能再拆出 Other Government Charges。</li>
-                      <li>UPS Customs Brokerage Charges 是 UPS 清关经纪相关费用，由 Brokerage Fee 和对应税费组成。</li>
-                      <li>出现 Brokerage QST 时，通常说明费用里包含魁北克销售税相关项目，不能只看 GST/HST。</li>
-                      <li>支付完成页要重点核对 Tracking Number、Payment Confirmation Number、Invoice Number 和 Total Paid。</li>
-                    </ul>
                   </div>
                 </article>
 
