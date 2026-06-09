@@ -114,7 +114,8 @@
           { "@type": "ListItem", "position": 4, "name": "泰国 UPS 进口费用", "url": "https://payduty.huodaiagent.com/guides/#country-thailand" },
           { "@type": "ListItem", "position": 5, "name": "美国 UPS 进口费用", "url": "https://payduty.huodaiagent.com/guides/#country-us" },
           { "@type": "ListItem", "position": 6, "name": "加拿大 UPS 进口费用", "url": "https://payduty.huodaiagent.com/guides/#country-canada" },
-          { "@type": "ListItem", "position": 7, "name": "墨西哥 UPS 进口费用", "url": "https://payduty.huodaiagent.com/guides/#country-mexico" }
+          { "@type": "ListItem", "position": 7, "name": "墨西哥 UPS 进口费用", "url": "https://payduty.huodaiagent.com/guides/#country-mexico" },
+          { "@type": "ListItem", "position": 8, "name": "波兰 DHL/FedEx 税金账单", "url": "https://payduty.huodaiagent.com/guides/#country-poland" }
         ]
       }
     </script>
@@ -1172,13 +1173,107 @@
                   <div class="flex flex-col md:flex-row md:items-start md:justify-between gap-4 mb-6">
                     <div>
                       <p class="text-xs font-semibold text-slate-400 mb-3">PL · Poland</p>
-                      <h3 class="text-3xl font-semibold tracking-normal mb-3">波兰：FedEx Faktura VAT 税金账单</h3>
-                      <p class="text-slate-600 leading-relaxed max-w-3xl">这组是 FedEx Express Poland 的 Faktura VAT，收件地为波兰，币种 PLN。账单会把 Należności podatkowe（税费）、Opłata za zabezpieczenie należności celnych（海关税费担保/代付相关费用）、Magazynowanie（仓储费）和 23% VAT 分开显示。</p>
+                      <h3 class="text-3xl font-semibold tracking-normal mb-3">波兰：DHL/FedEx 税金账单与付款文件</h3>
+                      <p class="text-slate-600 leading-relaxed max-w-3xl">波兰税金单既可能是 DHL Express Poland 的线上待支付提示和 Dokument Rozliczeniowy，也可能是 FedEx Express Poland 的 Faktura VAT。DHL 这组样张从追踪页的 Wymagana płatność 到费用拆解、结算文件都指向 1,201.87 PLN，适合说明波兰 DHL 会把进口 VAT、清关税费处理服务费和服务费 VAT 分开列出。</p>
                     </div>
-                    <span class="shrink-0 bg-amber-50 text-amber-700 px-3 py-1 rounded-full text-sm font-semibold">FedEx 税金样张</span>
+                    <span class="shrink-0 bg-amber-50 text-amber-700 px-3 py-1 rounded-full text-sm font-semibold">DHL / FedEx 税金样张</span>
                   </div>
 
-                  <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+                  <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+                    <div>
+                      <button
+                        type="button"
+                        class="image-zoom-trigger group relative block w-full text-left"
+                        data-lightbox-src="/guides/assets/poland-dhl-tracking-payment-required-1201-87.jpg"
+                        data-lightbox-alt="DHL Poland tracking page payment required 1201.87 PLN sample"
+                      >
+                        <img
+                          src="/guides/assets/poland-dhl-tracking-payment-required-1201-87.jpg"
+                          alt="DHL Poland tracking page payment required 1201.87 PLN sample"
+                          class="h-72 w-full rounded-3xl border border-slate-200 bg-white object-cover object-top shadow-sm transition group-hover:brightness-95"
+                          loading="lazy"
+                        />
+                        <span class="absolute right-4 top-4 rounded-full bg-slate-950/80 px-4 py-2 text-xs font-semibold text-white backdrop-blur">线上提示</span>
+                      </button>
+                      <p class="text-xs text-slate-400 mt-3">DHL 线上提示：页面显示 Wymagana płatność，提示包裹需要支付进口关税/税金，Należna kwota wynosi PLN 1201.87。</p>
+                    </div>
+
+                    <div>
+                      <button
+                        type="button"
+                        class="image-zoom-trigger group relative block w-full text-left"
+                        data-lightbox-src="/guides/assets/poland-dhl-online-charge-breakdown-1201-87.jpg"
+                        data-lightbox-alt="DHL Poland online charge breakdown 1201.87 PLN sample"
+                      >
+                        <img
+                          src="/guides/assets/poland-dhl-online-charge-breakdown-1201-87.jpg"
+                          alt="DHL Poland online charge breakdown 1201.87 PLN sample"
+                          class="h-72 w-full rounded-3xl border border-slate-200 bg-white object-cover object-top shadow-sm transition group-hover:brightness-95"
+                          loading="lazy"
+                        />
+                        <span class="absolute right-4 top-4 rounded-full bg-slate-950/80 px-4 py-2 text-xs font-semibold text-white backdrop-blur">费用拆解</span>
+                      </button>
+                      <p class="text-xs text-slate-400 mt-3">DHL 线上费用拆解：Tax 为 1,117.00 PLN，PaymentDefermentRisk 为 69.00 PLN，合计 Razem do zapłaty 1,201.87 PLN。</p>
+                    </div>
+                  </div>
+
+                  <div class="mt-6 grid grid-cols-1 lg:grid-cols-3 gap-6">
+                    <div>
+                      <button
+                        type="button"
+                        class="image-zoom-trigger group relative block w-full text-left"
+                        data-lightbox-src="/guides/assets/poland-dhl-dokument-rozliczeniowy-1201-87-page-1.jpg"
+                        data-lightbox-alt="DHL Poland Dokument Rozliczeniowy 1201.87 PLN page 1 sample"
+                      >
+                        <img
+                          src="/guides/assets/poland-dhl-dokument-rozliczeniowy-1201-87-page-1.jpg"
+                          alt="DHL Poland Dokument Rozliczeniowy 1201.87 PLN page 1 sample"
+                          class="h-80 w-full rounded-3xl border border-slate-200 bg-white object-cover object-top shadow-sm transition group-hover:brightness-95"
+                          loading="lazy"
+                        />
+                        <span class="absolute right-4 top-4 rounded-full bg-slate-950/80 px-4 py-2 text-xs font-semibold text-white backdrop-blur">DHL 1,201.87 PLN</span>
+                      </button>
+                      <p class="text-xs text-slate-400 mt-3">DHL 结算文件 1：Numer dokumentu DBG1892053，AWB 8571623756，Data wystawienia 08/06/2026，Razem do zapłaty 1,201.87 PLN。</p>
+                    </div>
+
+                    <div>
+                      <button
+                        type="button"
+                        class="image-zoom-trigger group relative block w-full text-left"
+                        data-lightbox-src="/guides/assets/poland-dhl-dokument-rozliczeniowy-1201-87-page-2.jpg"
+                        data-lightbox-alt="DHL Poland Dokument Rozliczeniowy 1201.87 PLN page 2 sample"
+                      >
+                        <img
+                          src="/guides/assets/poland-dhl-dokument-rozliczeniowy-1201-87-page-2.jpg"
+                          alt="DHL Poland Dokument Rozliczeniowy 1201.87 PLN page 2 sample"
+                          class="h-80 w-full rounded-3xl border border-slate-200 bg-white object-cover object-top shadow-sm transition group-hover:brightness-95"
+                          loading="lazy"
+                        />
+                        <span class="absolute right-4 top-4 rounded-full bg-slate-950/80 px-4 py-2 text-xs font-semibold text-white backdrop-blur">DHL 明细页</span>
+                      </button>
+                      <p class="text-xs text-slate-400 mt-3">DHL 结算文件 2：Numer dokumentu DCC0067646，页面列出 Należności podatkowe VAT 1,117.00 PLN、Razem Usługi Dodatkowe 69.00 PLN 和 VAT 15.87 PLN。</p>
+                    </div>
+
+                    <div>
+                      <button
+                        type="button"
+                        class="image-zoom-trigger group relative block w-full text-left"
+                        data-lightbox-src="/guides/assets/poland-dhl-dokument-rozliczeniowy-1201-87-summary.jpg"
+                        data-lightbox-alt="DHL Poland Dokument Rozliczeniowy shipment summary sample"
+                      >
+                        <img
+                          src="/guides/assets/poland-dhl-dokument-rozliczeniowy-1201-87-summary.jpg"
+                          alt="DHL Poland Dokument Rozliczeniowy shipment summary sample"
+                          class="h-80 w-full rounded-3xl border border-slate-200 bg-white object-cover object-top shadow-sm transition group-hover:brightness-95"
+                          loading="lazy"
+                        />
+                        <span class="absolute right-4 top-4 rounded-full bg-slate-950/80 px-4 py-2 text-xs font-semibold text-white backdrop-blur">DHL 汇总</span>
+                      </button>
+                      <p class="text-xs text-slate-400 mt-3">DHL 结算文件 3：按 AWB 8571623756 汇总，显示清关申报号 26PL44302D00DHH5N3、税费和服务费总额。</p>
+                    </div>
+                  </div>
+
+                  <div class="mt-6 grid grid-cols-1 lg:grid-cols-3 gap-6">
                     <div>
                       <button
                         type="button"
@@ -1194,7 +1289,7 @@
                         />
                         <span class="absolute right-4 top-4 rounded-full bg-slate-950/80 px-4 py-2 text-xs font-semibold text-white backdrop-blur">PLN 114.73</span>
                       </button>
-                      <p class="text-xs text-slate-400 mt-3">样张 1：AWB 871412139127，Invoice VAT No. 529927050，Data faktury 13/05/2026。</p>
+                      <p class="text-xs text-slate-400 mt-3">FedEx 样张 1：AWB 871412139127，Invoice VAT No. 529927050，Data faktury 13/05/2026。</p>
                     </div>
 
                     <div>
@@ -1212,7 +1307,7 @@
                         />
                         <span class="absolute right-4 top-4 rounded-full bg-slate-950/80 px-4 py-2 text-xs font-semibold text-white backdrop-blur">PLN 114.73</span>
                       </button>
-                      <p class="text-xs text-slate-400 mt-3">样张 2：AWB 871412086174，Invoice VAT No. 529922822，Data faktury 11/05/2026。</p>
+                      <p class="text-xs text-slate-400 mt-3">FedEx 样张 2：AWB 871412086174，Invoice VAT No. 529922822，Data faktury 11/05/2026。</p>
                     </div>
 
                     <div>
@@ -1230,11 +1325,21 @@
                         />
                         <span class="absolute right-4 top-4 rounded-full bg-slate-950/80 px-4 py-2 text-xs font-semibold text-white backdrop-blur">含仓储费</span>
                       </button>
-                      <p class="text-xs text-slate-400 mt-3">样张 3：AWB 871255190063，Invoice VAT No. 529931981，Kwota do zapłaty 155.93 PLN。</p>
+                      <p class="text-xs text-slate-400 mt-3">FedEx 样张 3：AWB 871255190063，Invoice VAT No. 529931981，Kwota do zapłaty 155.93 PLN。</p>
                     </div>
                   </div>
 
                   <div class="mt-6 grid grid-cols-1 lg:grid-cols-3 gap-4">
+                    <div class="rounded-3xl bg-slate-50 p-5">
+                      <p class="font-semibold mb-3">DHL 1,201.87 PLN 账单</p>
+                      <dl class="space-y-3 text-sm">
+                        <div class="flex justify-between gap-4"><dt class="text-slate-500">Należności podatkowe VAT</dt><dd class="font-semibold">1,117.00 PLN</dd></div>
+                        <div class="flex justify-between gap-4"><dt class="text-slate-500">Obsługa należności celno-podatkowych</dt><dd class="font-semibold">69.00 PLN</dd></div>
+                        <div class="flex justify-between gap-4"><dt class="text-slate-500">VAT 23% od usługi</dt><dd class="font-semibold">15.87 PLN</dd></div>
+                        <div class="flex justify-between gap-4 border-t border-slate-200 pt-3"><dt class="font-semibold">Razem do zapłaty</dt><dd class="font-semibold">1,201.87 PLN</dd></div>
+                      </dl>
+                    </div>
+
                     <div class="rounded-3xl bg-slate-50 p-5">
                       <p class="font-semibold mb-3">常见 114.73 PLN 账单</p>
                       <dl class="space-y-3 text-sm">
@@ -1256,15 +1361,17 @@
                       </dl>
                     </div>
 
-                    <div class="rounded-3xl bg-blue-50 p-5">
-                      <p class="font-semibold text-blue-950 mb-3">这类波兰 FedEx 单怎么看</p>
-                      <ul class="space-y-2 text-sm text-blue-950/75 leading-relaxed">
-                        <li>Faktura VAT 是 FedEx Poland 开出的 VAT 发票，Kwota do zapłaty / Do zapłaty 是最终应付金额。</li>
-                        <li>Należności podatkowe 或 Vat Pierwotny 是进口税费/VAT 相关项目；Opłata za zabezpieczenie 是 FedEx 为海关税费担保或代付产生的服务费。</li>
-                        <li>Magazynowanie 是仓储费，第三张因包裹进入仓储 2 天，最终金额高于 114.73 PLN。</li>
-                        <li>代付核对时重点看 AWB、Numer faktury VAT、Data faktury、Kwota do zapłaty 和币种 PLN。</li>
-                      </ul>
-                    </div>
+                  </div>
+
+                  <div class="mt-4 rounded-3xl bg-blue-50 p-5">
+                    <p class="font-semibold text-blue-950 mb-3">这类波兰 DHL/FedEx 单怎么看</p>
+                    <ul class="grid grid-cols-1 md:grid-cols-2 gap-2 text-sm text-blue-950/75 leading-relaxed">
+                      <li>DHL 线上页出现 Wymagana płatność 或 Należna kwota 时，说明该票有进口关税/税金待处理，点击 Pokaż szczegóły 可看费用拆解。</li>
+                      <li>DHL 的 Dokument Rozliczeniowy 是付款/结算文件，页面会提示该文件不是税法意义上的发票，重点看 Numer dokumentu、AWB、Termin płatności 和 Razem do zapłaty。</li>
+                      <li>Należności podatkowe VAT 是进口 VAT/税费主体金额，Obsługa należności celno-podatkowych / PaymentDefermentRisk 是 DHL 清关税费处理服务费，服务费再计 23% VAT。</li>
+                      <li>FedEx 的 Faktura VAT 中，Należności podatkowe 或 Vat Pierwotny 是进口税费/VAT 相关项目；Opłata za zabezpieczenie 是海关税费担保或代付服务费。</li>
+                      <li>Magazynowanie 是仓储费，包裹产生仓储时最终金额会高于常规税费账单。代付核对时统一看 AWB、document/invoice number、date、total due 和币种 PLN。</li>
+                    </ul>
                   </div>
                 </article>
 
@@ -2228,7 +2335,7 @@
             <section id="bill-samples" class="scroll-mt-24 rounded-[28px] bg-slate-950 text-white p-7 md:p-8">
               <p class="text-sm font-semibold text-white/45 mb-3">Bill Samples</p>
               <h2 class="text-3xl font-semibold tracking-normal mb-4">税金单样张库</h2>
-              <p class="text-white/65 leading-relaxed mb-6">目前已放入越南 DHL、印度尼西亚 DHL/UPS、马来西亚 UPS、泰国 UPS、印度 FedEx、以色列 DHL、土耳其 FedEx/海关资料、西班牙 UPS、波兰 FedEx、意大利 UPS、美国 UPS、加拿大 UPS、墨西哥 UPS、厄瓜多尔 DHL/DAS、秘鲁 DHL、智利税金明细、津巴布韦 DHL 十七类样张。后续你补充图片后，可以按国家和快递公司继续扩展。</p>
+              <p class="text-white/65 leading-relaxed mb-6">目前已放入越南 DHL、印度尼西亚 DHL/UPS、马来西亚 UPS、泰国 UPS、印度 FedEx、以色列 DHL、土耳其 FedEx/海关资料、西班牙 UPS、波兰 DHL/FedEx、意大利 UPS、美国 UPS、加拿大 UPS、墨西哥 UPS、厄瓜多尔 DHL/DAS、秘鲁 DHL、智利税金明细、津巴布韦 DHL 十七类样张。后续你补充图片后，可以按国家和快递公司继续扩展。</p>
               <div class="flex flex-wrap gap-3">
                 <a href="#country-vietnam" class="inline-flex bg-white text-slate-950 px-5 py-2 rounded-full text-sm font-semibold">查看越南样张</a>
                 <a href="#country-indonesia" class="inline-flex bg-white/10 text-white px-5 py-2 rounded-full text-sm font-semibold hover:bg-white/15">查看印尼样张</a>
