@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://payduty.huodaiagent.com/sitemap.xml
