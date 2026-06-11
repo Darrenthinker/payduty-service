@@ -711,8 +711,8 @@
                   <div class="flex flex-col md:flex-row md:items-start md:justify-between gap-4 mb-6">
                     <div>
                       <p class="text-xs font-semibold text-slate-400 mb-3">IL · Israel</p>
-                      <h3 class="text-3xl font-semibold tracking-normal mb-3">以色列：DHL 进口税费通知、明细与确认</h3>
-                      <p class="text-slate-600 leading-relaxed max-w-3xl">这组截图来自 DHL Israel 的进口税费支付流程。通知页提示 shipment 4805922590 需要缴纳进口税费/放行相关费用，费用明细显示 508.58 ILS 的组成，支付成功后会生成交易号和信用卡授权号。</p>
+                      <h3 class="text-3xl font-semibold tracking-normal mb-3">以色列：DHL 进口税费通知、申报单与发票确认</h3>
+                      <p class="text-slate-600 leading-relaxed max-w-3xl">这组截图来自 DHL Israel 的进口税费支付流程。通知页提示 shipment 4805922590 需要缴纳进口税费/放行相关费用，费用明细显示 508.58 ILS 的组成；补充的海关申报单和 DHL Tax Invoice 则显示 HAWB 4805922590 对应 Customs VAT 526 ILS、Customs Computer Fee 21 ILS，合计 547 ILS。</p>
                     </div>
                     <span class="shrink-0 bg-amber-50 text-amber-700 px-3 py-1 rounded-full text-sm font-semibold">DHL 税金样张</span>
                   </div>
@@ -809,6 +809,44 @@
                     </div>
                   </div>
 
+                  <div class="mt-6 grid grid-cols-1 lg:grid-cols-2 gap-6">
+                    <div>
+                      <button
+                        type="button"
+                        class="image-zoom-trigger group relative block w-full text-left"
+                        data-lightbox-src="/guides/assets/israel-dhl-customs-declaration-4805922590.jpg"
+                        data-lightbox-alt="Israel customs declaration DHL shipment 4805922590 sample"
+                      >
+                        <img
+                          src="/guides/assets/israel-dhl-customs-declaration-4805922590.jpg"
+                          alt="Israel customs declaration DHL shipment 4805922590 sample"
+                          class="h-96 w-full rounded-3xl border border-slate-200 bg-white object-cover object-top shadow-sm transition group-hover:brightness-95"
+                          loading="lazy"
+                        />
+                        <span class="absolute right-4 top-4 rounded-full bg-slate-950/80 px-4 py-2 text-xs font-semibold text-white backdrop-blur">海关申报</span>
+                      </button>
+                      <p class="text-xs text-slate-400 mt-3">以色列海关申报单：Declaration 26044584623823，HAWB 4805922590，CIF 2,925 ILS，税费合计 547 ILS。</p>
+                    </div>
+
+                    <div>
+                      <button
+                        type="button"
+                        class="image-zoom-trigger group relative block w-full text-left"
+                        data-lightbox-src="/guides/assets/israel-dhl-tax-invoice-9585690.jpg"
+                        data-lightbox-alt="DHL Israel tax invoice 9585690 shipment 4805922590 sample"
+                      >
+                        <img
+                          src="/guides/assets/israel-dhl-tax-invoice-9585690.jpg"
+                          alt="DHL Israel tax invoice 9585690 shipment 4805922590 sample"
+                          class="h-96 w-full rounded-3xl border border-slate-200 bg-white object-cover object-top shadow-sm transition group-hover:brightness-95"
+                          loading="lazy"
+                        />
+                        <span class="absolute right-4 top-4 rounded-full bg-slate-950/80 px-4 py-2 text-xs font-semibold text-white backdrop-blur">Tax Invoice</span>
+                      </button>
+                      <p class="text-xs text-slate-400 mt-3">DHL Tax Invoice：Tax Invoice Number 9585690，Date 07/06/26，HAWB 4805922590，Total in ILS 547.00。</p>
+                    </div>
+                  </div>
+
                   <div class="mt-6 grid grid-cols-1 lg:grid-cols-4 gap-4">
                     <div class="rounded-3xl bg-slate-50 p-5">
                       <p class="font-semibold mb-3">关键字段</p>
@@ -818,6 +856,17 @@
                         <div class="flex justify-between gap-4"><dt class="text-slate-500">Customer</dt><dd class="font-semibold">HABOTIK OF MOSHE</dd></div>
                         <div class="flex justify-between gap-4"><dt class="text-slate-500">Transaction</dt><dd class="font-semibold">435771498</dd></div>
                         <div class="flex justify-between gap-4"><dt class="text-slate-500">Date / Time</dt><dd class="font-semibold">2026-06-04 13:54:39</dd></div>
+                      </dl>
+                    </div>
+
+                    <div class="rounded-3xl bg-slate-50 p-5">
+                      <p class="font-semibold mb-3">Tax Invoice / 申报单</p>
+                      <dl class="space-y-3 text-sm">
+                        <div class="flex justify-between gap-4"><dt class="text-slate-500">HAWB</dt><dd class="font-semibold">4805922590</dd></div>
+                        <div class="flex justify-between gap-4"><dt class="text-slate-500">Tax Invoice</dt><dd class="font-semibold">9585690</dd></div>
+                        <div class="flex justify-between gap-4"><dt class="text-slate-500">Customs VAT</dt><dd class="font-semibold">₪526.00</dd></div>
+                        <div class="flex justify-between gap-4"><dt class="text-slate-500">Computer Fee</dt><dd class="font-semibold">₪21.00</dd></div>
+                        <div class="flex justify-between gap-4 border-t border-slate-200 pt-3"><dt class="font-semibold">Total in ILS</dt><dd class="font-semibold">₪547.00</dd></div>
                       </dl>
                     </div>
 
@@ -841,11 +890,13 @@
                       </dl>
                     </div>
 
-                    <div class="rounded-3xl bg-blue-50 p-5">
+                    <div class="rounded-3xl bg-blue-50 p-5 lg:col-span-4">
                       <p class="font-semibold text-blue-950 mb-3">这类以色列 DHL 单怎么看</p>
-                      <ul class="space-y-2 text-sm text-blue-950/75 leading-relaxed">
+                      <ul class="grid grid-cols-1 md:grid-cols-2 gap-2 text-sm text-blue-950/75 leading-relaxed">
                         <li>以色列 DHL 通知页通常使用希伯来语，重点先找 shipment / description 编号和应付金额。</li>
                         <li>费用明细页显示本组样张总额为 ILS 508.58，由两项服务/处理费用加 VAT 组成。</li>
+                        <li>海关申报单和 Tax Invoice 可用于核对 HAWB、申报号、CIF、Customs VAT、手续费和最终 ILS 总额。</li>
+                        <li>同一票货可能同时出现线上付款页、DHL Tax Invoice 和海关申报单，金额口径可能不同，要按文件类型分别核对。</li>
                         <li>支付后要保存 DHL 成功页和交易确认页，重点核对 transaction、approval number、金额和卡尾号。</li>
                         <li>代付确认时建议同时保留通知页、付款页、支付成功页，避免只凭一张希伯来语截图判断状态。</li>
                       </ul>
@@ -2382,7 +2433,7 @@
             <section id="bill-samples" class="scroll-mt-24 rounded-[28px] bg-slate-950 text-white p-7 md:p-8">
               <p class="text-sm font-semibold text-white/45 mb-3">Bill Samples</p>
               <h2 class="text-3xl font-semibold tracking-normal mb-4">税金单样张库</h2>
-              <p class="text-white/65 leading-relaxed mb-6">目前已放入越南 DHL、印度尼西亚 DHL/UPS、马来西亚 UPS、泰国 UPS、印度 FedEx、以色列 DHL、土耳其 FedEx/海关资料、西班牙 UPS、波兰 DHL/FedEx、意大利 UPS、美国 UPS、加拿大 UPS、墨西哥 UPS、厄瓜多尔 DHL/DAS、秘鲁 DHL、智利税金明细、津巴布韦 DHL 十七类样张。后续你补充图片后，可以按国家和快递公司继续扩展。</p>
+              <p class="text-white/65 leading-relaxed mb-6">目前已放入越南 DHL、印度尼西亚 DHL/UPS、马来西亚 UPS、泰国 UPS、印度 FedEx、以色列 DHL、土耳其 FedEx/海关资料、西班牙 UPS、波兰 DHL/FedEx、意大利 UPS、美国 UPS/DHL/CBP 7501、加拿大 UPS、墨西哥 UPS、厄瓜多尔 DHL/DAS、秘鲁 DHL、智利税金明细、津巴布韦 DHL 十八类样张。后续你补充图片后，可以按国家和快递公司继续扩展。</p>
               <div class="flex flex-wrap gap-3">
                 <a href="#country-vietnam" class="inline-flex bg-white text-slate-950 px-5 py-2 rounded-full text-sm font-semibold">查看越南样张</a>
                 <a href="#country-indonesia" class="inline-flex bg-white/10 text-white px-5 py-2 rounded-full text-sm font-semibold hover:bg-white/15">查看印尼样张</a>
