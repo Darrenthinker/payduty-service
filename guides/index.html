@@ -78,7 +78,7 @@
           "@type": "Organization",
           "name": "货代导航网"
         },
-        "dateModified": "2026-06-14"
+        "dateModified": "2026-06-16"
       }
     </script>
     <script type="application/ld+json">
@@ -1234,7 +1234,7 @@
                     <div>
                       <p class="text-xs font-semibold text-slate-400 mb-3">ES · Spain</p>
                       <h3 class="text-3xl font-semibold tracking-normal mb-3">西班牙：UPS/DHL/FedEx 进口税费、发票与海关申报</h3>
-                      <p class="text-slate-600 leading-relaxed max-w-3xl">西班牙样张现在包含 UPS 线上待支付流程、FedEx Spain 的 Payments 页面和支付确认页，以及 DHL Spain 的进口税费提示、费用拆解、支付成功页、DHL 发票和欧盟/西班牙海关申报单。FedEx 这组样张显示 TAX(VAT) EUR 9.02、Disbursement fee EUR 14.52，合计 EUR 23.54，支付后包裹完成派送。</p>
+                      <p class="text-slate-600 leading-relaxed max-w-3xl">西班牙样张现在包含 UPS 线上待支付流程、FedEx Spain 的 Payments 页面、支付确认页、税金发票，以及 DHL Spain 的进口税费提示、费用拆解、支付成功页、DHL 发票和欧盟/西班牙海关申报单。FedEx 这组样张显示进口 IVA EUR 9.02、行政处理费 EUR 12.00、处理费对应 IVA EUR 2.52，合计 EUR 23.54，支付后包裹完成派送。</p>
                     </div>
                     <span class="shrink-0 bg-amber-50 text-amber-700 px-3 py-1 rounded-full text-sm font-semibold">UPS / DHL / FedEx 税金样张</span>
                   </div>
@@ -1471,10 +1471,24 @@
                       <p class="font-semibold mb-3">FedEx 样张费用拆解</p>
                       <dl class="space-y-3 text-sm">
                         <div class="flex justify-between gap-4"><dt class="text-slate-500">TAX(VAT)</dt><dd class="font-semibold">€9.02</dd></div>
-                        <div class="flex justify-between gap-4"><dt class="text-slate-500">Disbursement fee</dt><dd class="font-semibold">€14.52</dd></div>
+                        <div class="flex justify-between gap-4"><dt class="text-slate-500">Gastos Administrativos</dt><dd class="font-semibold">€12.00</dd></div>
+                        <div class="flex justify-between gap-4"><dt class="text-slate-500">IVA 21% sobre gastos</dt><dd class="font-semibold">€2.52</dd></div>
                         <div class="flex justify-between gap-4 border-t border-slate-200 pt-3"><dt class="font-semibold">Total / Importe pagado</dt><dd class="font-semibold">€23.54</dd></div>
                       </dl>
-                      <p class="mt-4 text-xs text-slate-500 leading-relaxed">这组 FedEx Spain 截图能形成完整闭环：付款页显示 Payment Pending，支付确认页显示收据号，最终追踪页显示 Delivered。</p>
+                      <p class="mt-4 text-xs text-slate-500 leading-relaxed">这组 FedEx Spain 文件能形成完整闭环：付款页显示 Payment Pending，税金发票解释费用构成；线上 Disbursement fee EUR 14.52 可拆为行政处理费 EUR 12.00 + 对应 IVA EUR 2.52。</p>
+                    </div>
+
+                    <div class="rounded-3xl bg-purple-50 p-5">
+                      <p class="font-semibold text-purple-950 mb-3">FedEx 税金发票字段</p>
+                      <dl class="space-y-3 text-sm">
+                        <div class="flex justify-between gap-4"><dt class="text-purple-950/60">Factura</dt><dd class="font-semibold">895558709</dd></div>
+                        <div class="flex justify-between gap-4"><dt class="text-purple-950/60">Fecha Factura</dt><dd class="font-semibold">15/06/2026</dd></div>
+                        <div class="flex justify-between gap-4"><dt class="text-purple-950/60">Albarán</dt><dd class="font-semibold">872727069775</dd></div>
+                        <div class="flex justify-between gap-4"><dt class="text-purple-950/60">Servicio</dt><dd class="font-semibold">Intl Connect Plus</dd></div>
+                        <div class="flex justify-between gap-4"><dt class="text-purple-950/60">Peso facturado</dt><dd class="font-semibold">1.70 kg</dd></div>
+                        <div class="flex justify-between gap-4 border-t border-purple-100 pt-3"><dt class="font-semibold">Total Pendiente</dt><dd class="font-semibold">€23.54</dd></div>
+                      </dl>
+                      <p class="mt-4 text-xs text-purple-950/65 leading-relaxed">发票中间表格的 Total EUR 21.02 是进口 IVA 9.02 + Gastos Administrativos 12.00 的小计；底部再列出服务费对应 21% IVA 2.52，最终 Importe total adeudado 为 EUR 23.54。</p>
                     </div>
 
                     <div class="rounded-3xl bg-blue-50 p-5">
@@ -1501,9 +1515,10 @@
                       <p class="font-semibold text-purple-950 mb-3">这类西班牙 FedEx 单怎么看</p>
                       <ul class="space-y-2 text-sm text-purple-950/75 leading-relaxed">
                         <li>Payments 页出现 Payment Pending 时，说明税金或垫付服务费仍未处理，付款完成前可能影响派送确认。</li>
-                        <li>TAX(VAT) 是西班牙进口增值税项目；Disbursement fee 是 FedEx 代垫税费或清关付款相关服务费。</li>
+                        <li>Factura de aranceles e impuesto 要重点看 Número de factura、Albarán、Fecha Factura、Total Pendiente 和底部 Importe total adeudado。</li>
+                        <li>Impuesto de importación / IVA 是西班牙进口增值税；Gastos Administrativos 是 FedEx 行政/清关处理费，底部会再列处理费对应的 21% IVA。</li>
                         <li>支付成功后要保存 Gracias por su pago 页面，重点核对 Tracking ID、Importe pagado、Número de recibo 和币种 EUR。</li>
-                        <li>如果后续追踪页显示 Delivered，可把支付确认页和签收页一起留档，证明税费处理后包裹已经完成派送。</li>
+                        <li>如果后续追踪页显示 Delivered，可把税金发票、支付确认页和签收页一起留档，证明税费处理后包裹已经完成派送。</li>
                       </ul>
                     </div>
                   </div>
