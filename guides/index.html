@@ -118,7 +118,8 @@
           { "@type": "ListItem", "position": 8, "name": "加拿大 UPS 进口费用", "url": "https://payduty.huodaiagent.com/guides/#country-canada" },
           { "@type": "ListItem", "position": 9, "name": "墨西哥 UPS 进口费用", "url": "https://payduty.huodaiagent.com/guides/#country-mexico" },
           { "@type": "ListItem", "position": 10, "name": "西班牙 UPS/DHL/FedEx 进口税费", "url": "https://payduty.huodaiagent.com/guides/#country-spain" },
-          { "@type": "ListItem", "position": 11, "name": "波兰 DHL/FedEx 税金账单", "url": "https://payduty.huodaiagent.com/guides/#country-poland" }
+          { "@type": "ListItem", "position": 11, "name": "波兰 DHL/FedEx 税金账单", "url": "https://payduty.huodaiagent.com/guides/#country-poland" },
+          { "@type": "ListItem", "position": 12, "name": "意大利 UPS/FedEx 进口费用", "url": "https://payduty.huodaiagent.com/guides/#country-italy" }
         ]
       }
     </script>
@@ -232,8 +233,8 @@
               </div>
               <div class="rounded-3xl bg-white border border-slate-200 p-6">
                 <p class="text-sm text-slate-500 mb-3">真实样张</p>
-                <p class="text-4xl font-semibold">21</p>
-                <p class="text-sm text-slate-500 mt-2">越南 / 印尼 / 菲律宾 / 马来西亚 / 泰国 / 印度 / 以色列 / 土耳其 / 西班牙 UPS/DHL/FedEx / 波兰 / 意大利 / 美国 UPS/DHL / 波多黎各 UPS / 加拿大 / 墨西哥 / 厄瓜多尔 / 秘鲁 / 智利 / 津巴布韦样张</p>
+                <p class="text-4xl font-semibold">24</p>
+                <p class="text-sm text-slate-500 mt-2">越南 / 印尼 / 菲律宾 / 马来西亚 / 泰国 / 印度 / 以色列 / 土耳其 / 西班牙 UPS/DHL/FedEx / 波兰 / 意大利 UPS/FedEx / 美国 UPS/DHL / 波多黎各 UPS / 加拿大 / 墨西哥 / 厄瓜多尔 / 秘鲁 / 智利 / 津巴布韦样张</p>
               </div>
               <div class="rounded-3xl bg-white border border-slate-200 p-6">
                 <p class="text-sm text-slate-500 mb-3">后续方向</p>
@@ -1734,10 +1735,10 @@
                   <div class="flex flex-col md:flex-row md:items-start md:justify-between gap-4 mb-6">
                     <div>
                       <p class="text-xs font-semibold text-slate-400 mb-3">IT · Italy</p>
-                      <h3 class="text-3xl font-semibold tracking-normal mb-3">意大利：UPS 进口费用预付与追踪页提示</h3>
-                      <p class="text-slate-600 leading-relaxed max-w-3xl">这组截图来自 UPS Italy 包裹，追踪页会直接提示 import fees due，并引导进入 Pre-Pay Delivery Fees 页面。账单把 Government Charges、UPS Brokerage and Partner Government Agency Fees 和 VAT 分开列出，适合说明欧洲 UPS 费用里既有政府税费，也有清关/代理相关费用及 VAT。</p>
+                      <h3 class="text-3xl font-semibold tracking-normal mb-3">意大利：UPS 预付进口费用与 FedEx Import Tool 待付款</h3>
+                      <p class="text-slate-600 leading-relaxed max-w-3xl">这组意大利样张包含 UPS Italy 进口费用预付页，以及 FedEx Italy 在 Tracking 与 FIT-FedEx Import Tool 中显示的 duty / tax payment due。UPS 页面把 Government Charges、Brokerage Fees 和 VAT 分开列出；FedEx 页面则把 TAX(VAT)、Disbursement fee 和 Total 分开展示，适合用来判断欧洲包裹的税费主体和快递代垫服务费。</p>
                     </div>
-                    <span class="shrink-0 bg-amber-50 text-amber-700 px-3 py-1 rounded-full text-sm font-semibold">UPS 税金样张</span>
+                    <span class="shrink-0 bg-amber-50 text-amber-700 px-3 py-1 rounded-full text-sm font-semibold">UPS / FedEx 样张</span>
                   </div>
 
                   <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
@@ -1782,9 +1783,75 @@
                     </div>
                   </div>
 
-                  <div class="mt-6 grid grid-cols-1 lg:grid-cols-2 gap-4">
+                  <div class="mt-8">
+                    <div class="flex flex-col md:flex-row md:items-end md:justify-between gap-3 mb-4">
+                      <div>
+                        <p class="text-sm font-semibold text-purple-700 mb-1">FedEx Italy</p>
+                        <h4 class="text-2xl font-semibold tracking-normal">Tracking 待支付状态与 Import Tool 费用明细</h4>
+                      </div>
+                      <span class="self-start md:self-auto rounded-full bg-purple-50 px-3 py-1 text-xs font-semibold text-purple-700">Total EUR 49.24</span>
+                    </div>
+
+                    <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+                      <div>
+                        <button
+                          type="button"
+                          class="image-zoom-trigger group relative block w-full text-left"
+                          data-lightbox-src="/guides/assets/italy-fedex-tracking-payment-due-872730506645.jpg"
+                          data-lightbox-alt="FedEx Italy tracking duties and taxes payment due sample"
+                        >
+                          <img
+                            src="/guides/assets/italy-fedex-tracking-payment-due-872730506645.jpg"
+                            alt="FedEx Italy tracking duties and taxes payment due sample"
+                            class="h-72 w-full rounded-3xl border border-slate-200 bg-white object-contain object-top shadow-sm transition group-hover:brightness-95"
+                            loading="lazy"
+                          />
+                          <span class="absolute right-4 top-4 rounded-full bg-slate-950/80 px-4 py-2 text-xs font-semibold text-white backdrop-blur">FedEx 待支付</span>
+                        </button>
+                        <p class="text-xs text-slate-400 mt-3">追踪页示例：Tracking ID 872730506645，从 DONGGUAN, GD CN 发往 CASTELFIDARDO, AN IT，页面提示 A duties and taxes payment is due。</p>
+                      </div>
+
+                      <div>
+                        <button
+                          type="button"
+                          class="image-zoom-trigger group relative block w-full text-left"
+                          data-lightbox-src="/guides/assets/italy-fedex-import-tool-vat-872730506645.jpg"
+                          data-lightbox-alt="FedEx Italy Import Tool VAT EUR 35.74 sample"
+                        >
+                          <img
+                            src="/guides/assets/italy-fedex-import-tool-vat-872730506645.jpg"
+                            alt="FedEx Italy Import Tool VAT EUR 35.74 sample"
+                            class="h-72 w-full rounded-3xl border border-slate-200 bg-white object-contain object-top shadow-sm transition group-hover:brightness-95"
+                            loading="lazy"
+                          />
+                          <span class="absolute right-4 top-4 rounded-full bg-slate-950/80 px-4 py-2 text-xs font-semibold text-white backdrop-blur">VAT 明细</span>
+                        </button>
+                        <p class="text-xs text-slate-400 mt-3">FIT-FedEx Import Tool 示例：Payment Pending，TAX(VAT) EUR 35.74，说明 FedEx 已代客户向主管机构缴纳增值税。</p>
+                      </div>
+
+                      <div>
+                        <button
+                          type="button"
+                          class="image-zoom-trigger group relative block w-full text-left"
+                          data-lightbox-src="/guides/assets/italy-fedex-import-tool-disbursement-872730506645.jpg"
+                          data-lightbox-alt="FedEx Italy Import Tool disbursement fee EUR 13.50 sample"
+                        >
+                          <img
+                            src="/guides/assets/italy-fedex-import-tool-disbursement-872730506645.jpg"
+                            alt="FedEx Italy Import Tool disbursement fee EUR 13.50 sample"
+                            class="h-72 w-full rounded-3xl border border-slate-200 bg-white object-contain object-top shadow-sm transition group-hover:brightness-95"
+                            loading="lazy"
+                          />
+                          <span class="absolute right-4 top-4 rounded-full bg-slate-950/80 px-4 py-2 text-xs font-semibold text-white backdrop-blur">代垫费</span>
+                        </button>
+                        <p class="text-xs text-slate-400 mt-3">费用页示例：Disbursement fee EUR 13.50，TAX(VAT) EUR 35.74，Total EUR 49.24。</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="mt-6 grid grid-cols-1 lg:grid-cols-3 gap-4">
                     <div class="rounded-3xl bg-slate-50 p-5">
-                      <p class="font-semibold mb-3">样张费用拆解</p>
+                      <p class="font-semibold mb-3">UPS 样张费用拆解</p>
                       <dl class="space-y-3 text-sm">
                         <div class="flex justify-between gap-4"><dt class="text-slate-500">Government Charges</dt><dd class="font-semibold">€56.12</dd></div>
                         <div class="flex justify-between gap-4"><dt class="text-slate-500">UPS Brokerage and Partner Government Agency Fees</dt><dd class="font-semibold">€59.55</dd></div>
@@ -1793,13 +1860,23 @@
                       </dl>
                     </div>
 
+                    <div class="rounded-3xl bg-slate-50 p-5">
+                      <p class="font-semibold mb-3">FedEx 样张费用拆解</p>
+                      <dl class="space-y-3 text-sm">
+                        <div class="flex justify-between gap-4"><dt class="text-slate-500">TAX(VAT)</dt><dd class="font-semibold">EUR 35.74</dd></div>
+                        <div class="flex justify-between gap-4"><dt class="text-slate-500">Disbursement fee</dt><dd class="font-semibold">EUR 13.50</dd></div>
+                        <div class="flex justify-between gap-4 border-t border-slate-200 pt-3"><dt class="font-semibold">Total</dt><dd class="font-semibold">EUR 49.24</dd></div>
+                      </dl>
+                      <p class="mt-4 text-xs text-slate-500 leading-relaxed">Disbursement fee 是 FedEx 先向海关/主管机构垫付税费后收取的辅助服务费，不是意大利 VAT 本身。</p>
+                    </div>
+
                     <div class="rounded-3xl bg-blue-50 p-5">
-                      <p class="font-semibold text-blue-950 mb-3">这类意大利 UPS 单怎么看</p>
+                      <p class="font-semibold text-blue-950 mb-3">这类意大利 UPS / FedEx 单怎么看</p>
                       <ul class="space-y-2 text-sm text-blue-950/75 leading-relaxed">
                         <li>Tracking Details 页面出现 import fees due 时，说明派送前已有进口费用待支付。</li>
-                        <li>Government Charges 是政府税费部分，VAT 是增值税项目，二者要和 UPS 代理/清关费用分开看。</li>
-                        <li>UPS Brokerage and Partner Government Agency Fees 属于清关经纪及政府机构相关代理费用，不等同于单纯关税。</li>
-                        <li>代付确认时，重点核对 Tracking Number、Invoice Number、Import Date 和 Total Due。</li>
+                        <li>UPS 的 Government Charges、VAT 和 Brokerage Fees 要分开看；FedEx 的 TAX(VAT) 与 Disbursement fee 也要分开看。</li>
+                        <li>FedEx Import Tool 显示 Payment Pending 时，通常表示税费金额已生成，但付款尚未完成或尚未被系统记录。</li>
+                        <li>代付确认时，UPS 重点核对 Tracking Number、Invoice Number、Import Date 和 Total Due；FedEx 重点核对 Tracking ID、Payment Pending 状态和 Total。</li>
                       </ul>
                     </div>
                   </div>
@@ -3142,7 +3219,7 @@
             <section id="bill-samples" class="scroll-mt-24 rounded-[28px] bg-slate-950 text-white p-7 md:p-8">
               <p class="text-sm font-semibold text-white/45 mb-3">Bill Samples</p>
               <h2 class="text-3xl font-semibold tracking-normal mb-4">税金单样张库</h2>
-              <p class="text-white/65 leading-relaxed mb-6">目前已放入越南 DHL、印度尼西亚 DHL/UPS、菲律宾 UPS、马来西亚 UPS、泰国 UPS、印度 FedEx、以色列 DHL、土耳其 FedEx/海关资料、西班牙 UPS/DHL/FedEx/海关申报、波兰 DHL/FedEx、意大利 UPS、美国 UPS/DHL/CBP 7501、美国 DHL 已付款闭环、波多黎各 UPS、加拿大 UPS、墨西哥 UPS、厄瓜多尔 DHL/DAS、秘鲁 DHL、智利税金明细、津巴布韦 DHL 二十二类样张。后续你补充图片后，可以按国家和快递公司继续扩展。</p>
+              <p class="text-white/65 leading-relaxed mb-6">目前已放入越南 DHL、印度尼西亚 DHL/UPS、菲律宾 UPS、马来西亚 UPS、泰国 UPS、印度 FedEx、以色列 DHL、土耳其 FedEx/海关资料、西班牙 UPS/DHL/FedEx/海关申报、波兰 DHL/FedEx、意大利 UPS/FedEx、美国 UPS/DHL/CBP 7501、美国 DHL 已付款闭环、波多黎各 UPS、加拿大 UPS、墨西哥 UPS、厄瓜多尔 DHL/DAS、秘鲁 DHL、智利税金明细、津巴布韦 DHL 二十二类样张。后续你补充图片后，可以按国家和快递公司继续扩展。</p>
               <div class="flex flex-wrap gap-3">
                 <a href="#country-vietnam" class="inline-flex bg-white text-slate-950 px-5 py-2 rounded-full text-sm font-semibold">查看越南样张</a>
                 <a href="#country-indonesia" class="inline-flex bg-white/10 text-white px-5 py-2 rounded-full text-sm font-semibold hover:bg-white/15">查看印尼样张</a>
