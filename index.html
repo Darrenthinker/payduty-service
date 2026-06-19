@@ -45,6 +45,24 @@
         font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI",
           Roboto, sans-serif;
       }
+      html {
+        scrollbar-width: thin;
+        scrollbar-color: #c7cad6 transparent;
+      }
+      ::-webkit-scrollbar {
+        width: 7px;
+        height: 7px;
+      }
+      ::-webkit-scrollbar-track {
+        background: transparent;
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #c7cad6;
+        border-radius: 999px;
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        background: #9ca3af;
+      }
       .gradient-bg {
         background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
       }
@@ -226,17 +244,22 @@
     </div>
 
     <!-- Header -->
-    <header class="gradient-bg text-white py-4 sticky top-0 z-50 shadow-lg" id="top">
+    <header class="gradient-bg text-white py-2 sticky top-0 z-50 shadow-md" id="top">
       <div class="container mx-auto px-4">
-        <div class="flex items-center justify-between">
-          <div class="flex items-center space-x-3">
-            <div class="text-2xl">💰</div>
-            <div>
-              <h1 class="text-xl font-bold">税金代付专家</h1>
-              <p class="text-xs opacity-80">
-                <a href="https://huodaiagent.com/" target="_blank" rel="noopener noreferrer" class="font-semibold text-yellow-200 underline decoration-yellow-200/70 underline-offset-4 hover:text-white">货代导航网</a>旗下服务
-              </p>
-            </div>
+        <div class="flex min-h-[54px] items-center justify-between">
+          <div class="flex items-center gap-3 rounded-2xl px-2 py-1">
+            <span class="relative inline-flex h-11 w-11 items-center justify-center rounded-2xl bg-white text-xl shadow-sm ring-1 ring-white/50">
+              <span>💰</span>
+              <span class="absolute -right-1 -top-1 h-3 w-3 rounded-full bg-yellow-300 ring-2 ring-[#667eea]"></span>
+            </span>
+            <span class="leading-tight">
+              <a href="/" class="block text-lg font-bold tracking-normal hover:text-yellow-100">税金代付专家</a>
+              <span class="mt-0.5 block text-xs text-white/75">
+                <a href="https://huodaiagent.com/" target="_blank" rel="noopener noreferrer" class="font-semibold text-yellow-200 underline decoration-yellow-200/70 underline-offset-4 hover:text-white">货代导航网</a>
+                <span class="mx-1 text-white/35">|</span>
+                <span>旗下关税支付服务</span>
+              </span>
+            </span>
           </div>
           <!-- 导航 -->
           <nav class="hidden md:flex items-center space-x-6 text-sm font-medium">
@@ -247,13 +270,13 @@
           <div class="flex items-center gap-2">
             <a
               href="/guides/"
-              class="md:hidden inline-flex items-center rounded-full border border-white/35 bg-white/10 px-3 py-2 text-sm font-semibold text-white backdrop-blur-sm transition-colors hover:bg-white/20"
+              class="md:hidden inline-flex items-center rounded-full border border-white/35 bg-white/10 px-3 py-1.5 text-sm font-semibold text-white backdrop-blur-sm transition-colors hover:bg-white/20"
             >
               关税指南
             </a>
             <a
               href="#contact"
-              class="bg-white text-purple-600 px-4 md:px-5 py-2 rounded-full font-semibold text-sm hover:bg-gray-100 transition-colors whitespace-nowrap"
+              class="bg-white text-purple-600 px-4 md:px-5 py-1.5 rounded-full font-semibold text-sm hover:bg-gray-100 transition-colors whitespace-nowrap shadow-sm"
             >
               立即咨询
             </a>
@@ -1172,24 +1195,19 @@
     </section>
 
     <!-- Footer -->
-    <footer class="bg-white text-gray-950 py-8 border-t border-gray-200">
+    <footer class="border-t border-gray-200 bg-white/95 py-5 text-sm text-gray-500">
       <div class="container mx-auto px-4">
-        <div class="max-w-6xl mx-auto flex flex-col md:flex-row md:items-center md:justify-between gap-6">
-          <div>
-            <p class="font-semibold">美国DHL/UPS/FedEx关税代付专家</p>
-            <p class="text-sm text-gray-500 mt-1">
-              © 2025
-              <a href="https://huodaiagent.com/" target="_blank" class="text-blue-600 hover:text-blue-700 underline">货代导航网</a>
-              · payduty.huodaiagent.com
-            </p>
-          </div>
-          <div class="flex flex-wrap md:justify-end gap-x-4 gap-y-2 text-sm text-gray-500">
+        <div class="mx-auto flex max-w-6xl flex-col items-center justify-between gap-3 md:flex-row">
+          <p>
+            © 2025
+            <a href="https://huodaiagent.com/" target="_blank" rel="noopener noreferrer" class="font-medium text-blue-600 underline decoration-blue-200 underline-offset-2 hover:text-blue-700">货代导航网</a>
+            · payduty.huodaiagent.com
+          </p>
+          <div class="flex flex-wrap items-center justify-center gap-x-5 gap-y-2">
             <a href="/guides/" class="hover:text-gray-950">关税指南</a>
-            <span>DHL关税代付</span>
-            <span>UPS税金代付</span>
-            <span>FedEx关税代缴</span>
-            <span>美国清关服务</span>
-            <span>跨境物流代缴税</span>
+            <a href="#process" class="hover:text-gray-950">服务流程</a>
+            <a href="#contact" class="hover:text-gray-950">联系支付</a>
+            <span class="hidden text-gray-300 md:inline">DHL / UPS / FedEx</span>
           </div>
         </div>
       </div>
