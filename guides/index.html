@@ -267,7 +267,7 @@
               </div>
               <div class="rounded-[26px] border border-slate-200/80 bg-white/90 p-5 shadow-[0_18px_60px_rgba(15,23,42,0.06)]">
                 <p class="text-sm text-slate-500">真实样张</p>
-                <p class="mt-3 text-4xl font-semibold">35</p>
+                <p class="mt-3 text-4xl font-semibold">36</p>
                 <p class="mt-2 text-sm leading-relaxed text-slate-500">覆盖美国、加拿大、墨西哥、欧洲、亚洲与南美多国税金单。</p>
               </div>
               <div class="rounded-[26px] border border-slate-200/80 bg-white/90 p-5 shadow-[0_18px_60px_rgba(15,23,42,0.06)]">
@@ -2522,8 +2522,8 @@
                   <div class="flex flex-col md:flex-row md:items-start md:justify-between gap-4 mb-6">
                     <div>
                       <p class="text-xs font-semibold text-slate-400 mb-3">IT · Italy</p>
-                      <h3 class="text-3xl font-semibold tracking-normal mb-3">意大利：UPS 预付进口费用与 FedEx Import Tool 待付款</h3>
-                      <p class="text-slate-600 leading-relaxed max-w-3xl">这组意大利样张包含 UPS Italy 进口费用预付页，以及 FedEx Italy 在 Tracking 与 FIT-FedEx Import Tool 中显示的 duty / tax payment due。UPS 页面把 Government Charges、Brokerage Fees 和 VAT 分开列出；FedEx 页面则把 TAX(VAT)、Disbursement fee 和 Total 分开展示，适合用来判断欧洲包裹的税费主体和快递代垫服务费。</p>
+                      <h3 class="text-3xl font-semibold tracking-normal mb-3">意大利：UPS 预付进口费用与 FedEx Import Tool / 补收账单</h3>
+                      <p class="text-slate-600 leading-relaxed max-w-3xl">这组意大利样张包含 UPS Italy 进口费用预付页、FedEx Italy 在 Tracking 与 FIT-FedEx Import Tool 中显示的 duty / tax payment due，以及 FedEx 补收型税金账单。UPS 页面把 Government Charges、Brokerage Fees 和 VAT 分开列出；FedEx 页面则要同时看 TAX(VAT)、Disbursement fee、Duty Handling Fee、Rebill Reason 和 Total，适合判断欧洲包裹的税费主体、快递代垫服务费和后续追收原因。</p>
                     </div>
                     <span class="shrink-0 bg-amber-50 text-amber-700 px-3 py-1 rounded-full text-sm font-semibold">UPS / FedEx 样张</span>
                   </div>
@@ -2574,9 +2574,9 @@
                     <div class="flex flex-col md:flex-row md:items-end md:justify-between gap-3 mb-4">
                       <div>
                         <p class="text-sm font-semibold text-purple-700 mb-1">FedEx Italy</p>
-                        <h4 class="text-2xl font-semibold tracking-normal">Tracking 待支付状态与 Import Tool 费用明细</h4>
+                        <h4 class="text-2xl font-semibold tracking-normal">Tracking 待支付状态、Import Tool 与补收账单</h4>
                       </div>
-                      <span class="self-start md:self-auto rounded-full bg-purple-50 px-3 py-1 text-xs font-semibold text-purple-700">Total EUR 49.24</span>
+                      <span class="self-start md:self-auto rounded-full bg-purple-50 px-3 py-1 text-xs font-semibold text-purple-700">EUR 49.24 / HKD 350.77</span>
                     </div>
 
                     <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
@@ -2634,6 +2634,39 @@
                         <p class="text-xs text-slate-400 mt-3">费用页示例：Disbursement fee EUR 13.50，TAX(VAT) EUR 35.74，Total EUR 49.24。</p>
                       </div>
                     </div>
+
+                    <div class="mt-6 rounded-[28px] border border-purple-100 bg-purple-50/45 p-4 md:p-5">
+                      <div class="grid grid-cols-1 xl:grid-cols-[1.35fr_0.9fr] gap-5 xl:items-center">
+                        <div>
+                          <button
+                            type="button"
+                            class="image-zoom-trigger group relative block w-full text-left"
+                            data-lightbox-src="/guides/assets/italy-fedex-rebill-duty-invoice-889271634385.png"
+                            data-lightbox-alt="FedEx Italy rebill duty invoice VAT consumption tax and duty handling fee sample"
+                          >
+                            <img
+                              src="/guides/assets/italy-fedex-rebill-duty-invoice-889271634385.png"
+                              alt="FedEx Italy rebill duty invoice VAT consumption tax and duty handling fee sample"
+                              class="h-48 w-full rounded-3xl border border-purple-100 bg-white object-contain object-left shadow-sm transition group-hover:brightness-95 md:h-56"
+                              loading="lazy"
+                            />
+                            <span class="absolute right-4 top-4 rounded-full bg-slate-950/80 px-4 py-2 text-xs font-semibold text-white backdrop-blur">FedEx 补收账单</span>
+                          </button>
+                          <p class="text-xs text-purple-950/55 mt-3">账单示例：Air Waybill Number 889271634385，Ship Date 03/05/2026，Customs Entry Date 03/08/2026，收件地 Torino, Italy。</p>
+                        </div>
+                        <div class="rounded-3xl bg-white p-5 shadow-sm">
+                          <p class="text-xs font-semibold text-purple-700 mb-2">FedEx Rebill / Duty Invoice</p>
+                          <h5 class="text-xl font-semibold tracking-normal mb-4">意大利 FedEx 补收税金单怎么看</h5>
+                          <dl class="space-y-3 text-sm">
+                            <div class="flex justify-between gap-4"><dt class="text-slate-500">VAT / Consumption Tax</dt><dd class="font-semibold">241.78</dd></div>
+                            <div class="flex justify-between gap-4"><dt class="text-slate-500">Duty Handling Fee</dt><dd class="font-semibold">108.99</dd></div>
+                            <div class="flex justify-between gap-4"><dt class="text-slate-500">Conversion Rate</dt><dd class="font-semibold">EUR-HKD 9.0825</dd></div>
+                            <div class="flex justify-between gap-4 border-t border-slate-200 pt-3"><dt class="font-semibold">Total</dt><dd class="font-semibold">350.77</dd></div>
+                          </dl>
+                          <p class="mt-4 text-xs leading-relaxed text-slate-500">Rebill Reason 显示 Payer declines payment，表示原付款方拒付或未承担该笔费用，FedEx 后续转为补收。核对时重点看 Air Waybill Number、Delivery Information、Recipient、费用项目和换算汇率。</p>
+                        </div>
+                      </div>
+                    </div>
                   </div>
 
                   <div class="mt-6 grid grid-cols-1 lg:grid-cols-3 gap-4">
@@ -2663,7 +2696,8 @@
                         <li>Tracking Details 页面出现 import fees due 时，说明派送前已有进口费用待支付。</li>
                         <li>UPS 的 Government Charges、VAT 和 Brokerage Fees 要分开看；FedEx 的 TAX(VAT) 与 Disbursement fee 也要分开看。</li>
                         <li>FedEx Import Tool 显示 Payment Pending 时，通常表示税费金额已生成，但付款尚未完成或尚未被系统记录。</li>
-                        <li>代付确认时，UPS 重点核对 Tracking Number、Invoice Number、Import Date 和 Total Due；FedEx 重点核对 Tracking ID、Payment Pending 状态和 Total。</li>
+                        <li>FedEx 补收账单出现 Rebill Reason 时，要确认是不是原付款方拒付、收件人未处理或费用被转嫁给发件人。</li>
+                        <li>代付确认时，UPS 重点核对 Tracking Number、Invoice Number、Import Date 和 Total Due；FedEx 重点核对 Tracking ID / Air Waybill Number、Payment Pending 状态、Rebill Reason 和 Total。</li>
                       </ul>
                     </div>
                   </div>
